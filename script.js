@@ -50,3 +50,32 @@ document.querySelectorAll("section").forEach(section => {
   section.classList.add("hidden");
   observer.observe(section);
 });
+
+/*TYPING EFFECT*/
+const text = ["Software Engineer", "Frontend Developer", "Creative Thinker"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+function type() {
+  if (count === text.length) {
+    count = 0;
+  }
+
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
+
+  document.querySelector(".hero h3").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    setTimeout(() => {
+      index = 0;
+      count++;
+      type();
+    }, 1500);
+  } else {
+    setTimeout(type, 80);
+  }
+}
+type();
