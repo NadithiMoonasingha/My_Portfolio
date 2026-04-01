@@ -79,3 +79,15 @@ function type() {
   }
 }
 type();
+
+/* MOBILE MENU */
+const menuToggle = document.createElement("div");
+menuToggle.innerHTML = "☰";
+menuToggle.classList.add("menu-toggle");
+
+document.querySelector(".navbar").appendChild(menuToggle);
+
+menuToggle.addEventListener("click", () => {
+  document.querySelector(".nav-links").classList.toggle("open");
+});
+
