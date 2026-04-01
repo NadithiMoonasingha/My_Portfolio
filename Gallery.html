@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gallery | Nadithi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Nadithi Moonasingha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 </head>
-
 <body>
+  <canvas id="particles"></canvas>
+  <div id="progress-bar"></div>
 
-<nav class="navbar">
-  <div class="logo">Nadithi</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <div class="logo">Nadithi Moonasingha</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="nav-particles"></div>
+  </nav>
 
-<section class="gallery">
-  <h2>Gallery</h2>
-  <p class="subtitle">Designs & Screenshots</p>
+  <section class="gallery-page">
+    <a href="index.html" class="page-back">← Back to Home</a>
+    <h2>Gallery</h2>
+    <p class="subtitle">Design work, screenshots, and visual experiments</p>
 
-  <div class="gallery-grid">
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="screenshots">Screenshots</button>
+      <button class="filter-btn" data-filter="photography">Photography</button>
+    </div>
 
-    <img src="assets/project1.jpg">
-    <img src="assets/project2.jpg">
-    <img src="assets/project3.jpg">
-    <img src="assets/project4.jpg">
-    <img src="assets/project5.jpg">
-    <img src="assets/project6.jpg">
+    <div class="gallery-grid">
+      <div class="gallery-item" data-category="design">
+        <img src="assets/gallery1.jpg" alt="Design work 1" />
+        <div class="gallery-caption">Mobile UI concept</div>
+      </div>
 
-  </div>
-</section>
+      <div class="gallery-item" data-category="screenshots">
+        <img src="assets/gallery2.jpg" alt="Project screenshot 1" />
+        <div class="gallery-caption">Dashboard preview</div>
+      </div>
 
+      <div class="gallery-item" data-category="design">
+        <img src="assets/gallery3.jpg" alt="Design work 2" />
+        <div class="gallery-caption">Interface exploration</div>
+      </div>
+
+      <div class="gallery-item" data-category="screenshots">
+        <img src="assets/gallery4.jpg" alt="Project screenshot 2" />
+        <div class="gallery-caption">App screen collection</div>
+      </div>
+
+      <div class="gallery-item" data-category="photography">
+        <img src="assets/gallery5.jpg" alt="Photography sample" />
+        <div class="gallery-caption">Visual composition study</div>
+      </div>
+
+      <div class="gallery-item" data-category="design">
+        <img src="assets/gallery6.jpg" alt="Design work 3" />
+        <div class="gallery-caption">Wireframe to UI transition</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

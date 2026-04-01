@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Blog | Nadithi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Nadithi Moonasingha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 </head>
-
 <body>
+  <canvas id="particles"></canvas>
+  <div id="progress-bar"></div>
 
-<nav class="navbar">
-  <div class="logo">Nadithi</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <div class="logo">Nadithi Moonasingha</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    <div class="nav-particles"></div>
+  </nav>
 
-<section class="blog">
-  <h2>Blog</h2>
-  <p class="subtitle">Thoughts on development & design</p>
+  <section class="blog-page">
+    <a href="index.html" class="page-back">← Back to Home</a>
+    <h2>Blog</h2>
+    <p class="subtitle">Thoughts on design, development, and digital experiences</p>
 
-  <div class="blog-container">
+    <div class="blog-list">
+      <article class="blog-card">
+        <p class="blog-meta">April 2026 · 3 min read</p>
+        <h3>What Makes a Good UI Feel Intuitive?</h3>
+        <p>
+          A short reflection on how structure, spacing, visual hierarchy, and interaction
+          cues shape how users understand a digital interface.
+        </p>
+        <div class="tags">
+          <span>UI/UX</span>
+          <span>Design Thinking</span>
+        </div>
+      </article>
 
-    <div class="blog-card">
-      <span class="blog-date">May 2026 • 2 min read</span>
-      <h3>Building My First Portfolio</h3>
-      <p>How I designed and built my personal portfolio using HTML, CSS, and JavaScript.</p>
-      <div class="tags">
-        <span>Portfolio</span>
-        <span>Frontend</span>
-      </div>
+      <article class="blog-card">
+        <p class="blog-meta">March 2026 · 2 min read</p>
+        <h3>Why I Enjoy Blending Design and Development</h3>
+        <p>
+          My perspective on how UI/UX and frontend development work best together when
+          solving real user problems.
+        </p>
+        <div class="tags">
+          <span>Frontend</span>
+          <span>UX</span>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <p class="blog-meta">February 2026 · 4 min read</p>
+        <h3>Building Student Projects That Actually Tell a Story</h3>
+        <p>
+          A simple framework for presenting academic and personal projects in a way that
+          recruiters and portfolio reviewers can understand quickly.
+        </p>
+        <div class="tags">
+          <span>Portfolio</span>
+          <span>Projects</span>
+        </div>
+      </article>
     </div>
+  </section>
 
-    <div class="blog-card">
-      <span class="blog-date">April 2026 • 3 min read</span>
-      <h3>UI/UX Principles I Follow</h3>
-      <p>Simple rules I use to design clean and user-friendly interfaces.</p>
-      <div class="tags">
-        <span>UI/UX</span>
-        <span>Design</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
