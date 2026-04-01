@@ -413,7 +413,7 @@ h2 {
 /* CURRENT DEGREE HIGHLIGHT */
 .timeline-item.current {
   border: 1px solid var(--accent);
-  box-shadow: 0 0 15px rgba(122, 98, 132, 0.3);
+  box-shadow: 0 0 10px var(--accent);
 }
 
 /* EDUCATION SECTION STYLING */
@@ -442,18 +442,18 @@ h2 {
 
 /* Line 3: Degree (White/Main Text) */
 .degree {
-  color: var(--text);
+  color: var(--ube);
   font-size: 1rem; /* Smaller than Year */
   font-weight: 40;
+  opacity: 0.9;
 }
 
 /* Line 4: Location (Purple + Smallest) */
 .location {
-  color: var(--accent-soft); /* Purple */
+  color: var(--ube); /* Purple */
   font-size: 0.85rem; /* Smallest font size */
   font-style: italic;
-  opacity: 0.8;
-  align-self: auto;
+  opacity: 1;
 }
 
 /* Hover effect for the card */
