@@ -141,16 +141,36 @@ h2 {
 
 /* PROJECTS */
 .project-card {
-  background: var(--american-blue);
+  background: #111;
   padding: 25px;
-  border-radius: 10px;
-  border: 1px solid rgba(149, 155, 181, 0.1);
-  transition: 0.3s;
+  border-radius: 12px;
+  border: 1px solid #222;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, #8387C3, transparent);
+  top: -50%;
+  left: -50%;
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.project-card:hover::before {
+  opacity: 0.1;
+  transform: rotate(45deg);
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--ube);
+  transform: translateY(-10px) scale(1.02);
+  border-color: #8387C3;
 }
 
 .project-card p {
