@@ -279,4 +279,17 @@ footer {
     height: 100%;
     z-index: -1;
   }
+  /* GLOW BUTTON */
+  .btn.primary {
+    box-shadow: 0 0 10px #ff2c2c;
+  }
+
+  .btn.primary:hover {
+    box-shadow: 0 0 25px #ff2c2c;
+  }
+
+  /* SECTION HEADINGS GLOW */
+  h2 {
+    text-shadow: 0 0 10px rgba(255, 44, 44, 0.5);
+  }
 }
