@@ -1,6 +1,4 @@
-/* =========================
-   SMOOTH SCROLL
-========================= */
+/* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -10,9 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-/* =========================
-   ACTIVE NAV LINK
-========================= */
+/* ACTIVE NAV LINK */
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -152,9 +148,7 @@ if (canvas) {
 }
 
 
-/* =========================
-   SCROLL PROGRESS
-========================= */
+/* SCROLL PROGRESS
 const progressBar = document.getElementById("progress-bar");
 
 if (progressBar) {
@@ -165,12 +159,10 @@ if (progressBar) {
     const progress = (scrollTop / height) * 100;
     progressBar.style.width = progress + "%";
   });
-}
+}*/
 
 
-/* =========================
-   PROJECT CARD ANIMATION
-========================= */
+/* PROJECT CARD ANIMATION */
 const cards = document.querySelectorAll(".project-card");
 
 cards.forEach((card, index) => {
