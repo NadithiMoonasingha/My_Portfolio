@@ -7,17 +7,18 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="progress-bar"></div>
-    <canvas id="particles"></canvas>
+  <div id="progress-bar"></div>
+  <canvas id="particles"></canvas>
+  <div class="cursor"></div>
 
 <!-- Nav Bar -->
-  <script src="script.js"></script>
   <nav class="navbar">
   <div class="logo">Nadithi Moonasingha</div>
 
@@ -25,23 +26,21 @@
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
+    <!--<li><a href="#experience">Experience</a></li> -->
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <!-- Hero Section -->
 <section class="hero">
-  <h3>UI/UX Designer</h3>
+  <h3 class="typing"></h3>
   <h1>Nadithi Moonasingha</h1>
-  <p>
-    Building scalable apps and clean user experiences using modern technologies.
-  </p>
-
+  <p>UI/UX Designer & Computer Science Undergraduate focused on creating intuitive, user-centered digital experiences.</p>
   <div class="hero-buttons">
     <a href="#projects" class="btn primary">View Projects</a>
     <a href="#contact" class="btn">Get in Touch</a>
-    <a href="#" class="btn">Download Resume</a>
+    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
   </div>
 </section>
 
@@ -56,13 +55,8 @@
     </div>
 
     <div class="about-text">
-      <p>
-        I'm a Computer Science student passionate about building real-world applications.
-      </p>
-
-      <p>
-        I focus on frontend development, backend systems, and scalable architectures.
-      </p>
+      <p>Motivated Computer Science undergraduate with a strong interest in UI/UX design and user-centred digital experiences. </p>
+      <p>Experienced in designing intuitive interfaces and developing frontend applications with a focus on usability and functionality.Passionate about creating engaging, efficient, and user-friendly solutions through design and technology.</p>
     </div>
   </div>
 </section>
@@ -74,102 +68,266 @@
 
   <div class="project-grid">
 
+    <!-- Clinexis -->
     <div class="project-card">
-      <h3>Project 1</h3>
-      <p>AI-powered mobile healthcare app that streamlines doctor–patient communication with voice-to-text, smart summaries, and medicine tracking.</p>
-      <div class="tags">
-        <span>Java</span>
-        <span>ReactNative</span>
-        <span>NestJS</span>
+      <div class="project-image">
+        <img src="assets/clinexis.jpg" alt="Clinexis">
       </div>
-      <div class="project-links">
-        <a href="#">GitHub</a>
-        <a href="#">Live</a>
+      <div class="project-content">
+        <h3>Clinexis</h3>
+        <p>AI-powered healthcare platform for managing patient records, consultations, and medical services.</p>
+        <div class="tags">
+          <span>UI/UX</span>
+          <span>React Native</span>
+          <span>NestJS</span>
+          <span>MongoDB</span>
+        </div>
       </div>
     </div>
+
+    <!-- EcoVolt -->
     <div class="project-card">
-      <h3>Project 2</h3>
-      <p>Another project description.</p>
-      <div class="tags">
-        <span>React</span>
-        <span>Node.js</span>
+      <div class="project-image">
+        <img src="assets/ecovolt.jpeg" alt="EcoVolt">
       </div>
-      <div class="project-links">
-        <a href="#">GitHub</a>
-        <a href="#">Live</a>
+      <div class="project-content">
+        <h3>EcoVolt</h3>
+        <p>Mobile app promoting renewable energy usage with user-centered UI workflows.</p>
+        <div class="tags">
+          <span>UI/UX</span>
+          <span>Figma</span>
+          <span>Mobile Design</span>
+        </div>
       </div>
     </div>
+
+    <!-- Smart To-Do -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/todo.jpg" alt="Smart To-Do">
+      </div>
+      <div class="project-content">
+        <h3>Smart To-Do</h3>
+        <p>UX-focused task management web app with modular architecture and interactive UI.</p>
+        <div class="tags">
+          <span>JavaScript</span>
+          <span>UX Design</span>
+          <span>Web App</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Earth In Force -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/earth.jpg" alt="Earth In Force">
+      </div>
+      <div class="project-content">
+        <h3>Earth In Force</h3>
+        <p>Climate action website with interactive UI and accessibility-focused design.</p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>UI Design</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task Manager -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/task.jpg" alt="Task Manager">
+      </div>
+      <div class="project-content">
+        <h3>Task Manager App</h3>
+        <p>GUI-based task manager with search, sorting, and JSON-based storage.</p>
+        <div class="tags">
+          <span>Java</span>
+          <span>GUI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MathBro -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/mathbro.jpg" alt="MathBro">
+      </div>
+      <div class="project-content">
+        <h3>MathBro</h3>
+        <p>CLI-based math quiz app with levels, tracking, and automated reports.</p>
+        <div class="tags">
+          <span>Python</span>
+          <span>CLI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banking System -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="assets/bank.jpg" alt="Bank System">
+      </div>
+      <div class="project-content">
+        <h3>Bank System</h3>
+        <p>Menu-driven banking system with account management features.</p>
+        <div class="tags">
+          <span>Java</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- Skills Section -->
- <section id="skills" class="skills">
+<section id="skills" class="skills">
   <h2>Skills</h2>
-  <p class="subtitle">Technologies I use</p>
+  <p class="subtitle">Technologies & tools I work with</p>
 
-  <div class="skill-list">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>React</span>
-    <span>Java</span>
-    <span>Python</span>
-    <span>Git</span>
-    <span>NestJS</span>
-    <span>MongoDB</span>
-    <span>TypeScript</span>
-    <span>Figma</span>
-    <span>Prototyping</span>
-    <span>UI Design</span>
-    </span>User Flows</span>
-    <span>Wireframing</span>
-    <span>GitHub</span>
+  <div class="skills-slider">
+
+    <div class="skills-track">
+
+<!-- SKILLS (REPEATED FOR LOOP EFFECT) -->
+
+      <span>Python</span>
+      <span>Java</span>
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>MongoDB</span>
+      <span>SQL</span>
+      <span>Figma</span>
+      <span>Axure</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>Wireframing</span>
+      <span>Prototyping</span>
+      <span>User Flows</span>
+      <span>UI Design</span>
+      <span>UX Design</span>
+      <span>Frontend Development</span>
+      <span>Responsive Design</span>
+
+      <!-- DUPLICATE FOR INFINITE LOOP -->
+
+      <span>Python</span>
+      <span>Java</span>
+      <span>JavaScript</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>MongoDB</span>
+      <span>SQL</span>
+      <span>Figma</span>
+      <span>Axure</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>Wireframing</span>
+      <span>Prototyping</span>
+      <span>User Flows</span>
+      <span>UI Design</span>
+      <span>UX Design</span>
+      <span>Frontend Development</span>
+      <span>Responsive Design</span>
+
+    </div>
 
   </div>
 </section>
 
-<!-- Experience Section 
- <section id="experience" class="experience">
+<!-- Experience Section --><!-- 
+<section id="experience" class="experience">
   <h2>Experience</h2>
+  <p class="subtitle">Where I've worked</p>
+
+  <div class="timeline"> -->
+
+    <!-- ITEM 1 --> <!--
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <span class="date">2024 – 2025</span>
+        <h3>Event Coordinator</h3>
+        <h4>Youth Pulse Club – IIT</h4>
+
+        <ul>
+          <p>Organized university-level events and managed teams</p>
+          <p>Coordinated logistics and communication</p>
+        </ul>
+      </div>
+    </div> -->
+
+    <!-- ITEM 2 --> <!--
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <span class="date">2025 – Present</span>
+        <h3>Volunteer</h3>
+        <h4>IEEE Student Branch – IIT</h4>
+
+        <ul>
+          <p>Participated in technical and community events</p>
+          <p>Collaborated with teams on IEEE activities</p>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+<!-- Education Section -->
+<section id="education" class="education">
+  <h2>Education</h2>
 
   <div class="timeline">
 
     <div class="timeline-item">
-      <h3>Software Engineer Intern</h3>
-      <p>Company Name | 2025</p>
-      <ul>
-        <li>Worked on frontend development</li>
-        <li>Improved performance</li>
-      </ul>
+      <h3>BSc (Hons) Computer Science</h3>
+      <p>University of Westminster (IIT) | 2025 – Present</p>
     </div>
+
     <div class="timeline-item">
-      <h3>Freelance Developer</h3>
-      <p>2024</p>
-      <ul>
-        <li>Built websites for clients</li>
-      </ul>
+      <h3>Foundation Certificate in IT</h3>
+      <p>Informatics Institute of Technology | 2024</p>
     </div>
+
   </div>
-</section>-->
+</section>
 
 <!-- Contact Section -->
- <section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p class="subtitle">Let's work together</p>
+    <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p class="subtitle">Let's work together</p>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Your Message"></textarea>
+    <div class="contact-wrapper">
+        <form class="contact-form">
 
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+        <div class="input-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+        </div>
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+        </form>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="contact-socials">
+        <a href="https://github.com/nadithimoonasingha" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nadithim/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/nadithimoonasingha" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="mailto:moonasinghanadithi@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    </section>
 
 <!-- Footer -->
  <footer>
   <p>© 2026 Nadithi Moonasingha. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
