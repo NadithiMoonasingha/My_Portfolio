@@ -152,6 +152,7 @@ body {
 /* =========================
    HERO
 ========================= */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -166,10 +167,9 @@ body {
 /* top label */
 .hero h3 {
   color: var(--accent);
-  letter-spacing: 4px;
-  font-size: 14px;
+  letter-spacing: 3px;
+  font-size: 16px;
   text-transform: uppercase;
-  opacity: 0.8;
 }
 
 /* MAIN NAME */
