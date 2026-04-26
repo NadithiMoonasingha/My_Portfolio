@@ -1,3 +1,4 @@
+import { Mail, Phone, ExternalLink, GitBranch } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 
 export default function Contact() {
@@ -10,56 +11,37 @@ export default function Contact() {
       <p className="text-gray-400 max-w-md mb-12 text-sm leading-relaxed">
         I am currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
       </p>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        <a
-          href={`mailto:${portfolioData.email}`}
-          className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 hover:bg-white/8 transition-all duration-300 group"
-        >
-          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
+        <a href={`mailto:${portfolioData.email}`} className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 group">
+          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">
+            <Mail size={18} />
           </div>
           <div>
             <p className="text-gray-500 text-xs uppercase tracking-widest mb-1">Email</p>
             <p className="text-white text-sm group-hover:text-purple-300 transition-colors">{portfolioData.email}</p>
           </div>
         </a>
-
-        <a
-          href={`tel:${portfolioData.phone}`}
-          className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 hover:bg-white/8 transition-all duration-300 group"
-        >
-          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
-            ✆
+        <a href={`tel:${portfolioData.phone}`} className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 group">
+          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">
+            <Phone size={18} />
           </div>
           <div>
             <p className="text-gray-500 text-xs uppercase tracking-widest mb-1">Phone</p>
             <p className="text-white text-sm group-hover:text-purple-300 transition-colors">{portfolioData.phone}</p>
           </div>
         </a>
-
-        <a
-          href={portfolioData.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 hover:bg-white/8 transition-all duration-300 group"
-        >
-          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
-            in
+        <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 group">
+          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">
+            <ExternalLink size={18} />
           </div>
           <div>
             <p className="text-gray-500 text-xs uppercase tracking-widest mb-1">LinkedIn</p>
             <p className="text-white text-sm group-hover:text-purple-300 transition-colors">linkedin.com/in/nadithim</p>
           </div>
         </a>
-
-        <a
-          href={portfolioData.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 hover:bg-white/8 transition-all duration-300 group"
-        >
-          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
-            ⌥
+        <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 group">
+          <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">
+            <GitBranch size={18} />
           </div>
           <div>
             <p className="text-gray-500 text-xs uppercase tracking-widest mb-1">GitHub</p>
@@ -67,10 +49,9 @@ export default function Contact() {
           </div>
         </a>
       </div>
-
       <div className="border-t border-white/10 pt-8 text-center">
         <p className="text-gray-600 text-sm">
-          © {new Date().getFullYear()} Nadithi Moonasingha. Built with Next.js & Tailwind CSS.
+          2026 Nadithi Moonasingha. Built with Next.js and Tailwind CSS.
         </p>
       </div>
     </section>
