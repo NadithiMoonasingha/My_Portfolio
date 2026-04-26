@@ -1,6 +1,7 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
+import { Download } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -22,25 +23,18 @@ export default function Hero() {
           {portfolioData.about}
         </p>
         <div className="flex flex-wrap gap-4">
-          <a
-            href="#projects"
-            className="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-full text-sm font-medium transition-colors duration-200"
-          >
+          <a href="#projects" className="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-full text-sm font-medium transition-colors duration-200">
             View My Work
           </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200"
-          >
+          <a href="#contact" className="px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200">
             Get In Touch
           </a>
-          <a
-            href={portfolioData.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200"
-          >
+          <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200">
             GitHub
+          </a>
+          <a href="/CV.pdf" download="Nadithi_Moonasingha_CV.pdf" className="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-full text-sm font-medium transition-colors duration-200">
+            <Download size={15} />
+            Download CV
           </a>
         </div>
       </div>
