@@ -8,7 +8,7 @@ import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative z-10">
       <Hero />
       <FadeIn><Projects /></FadeIn>
       <FadeIn delay={0.1}><Skills /></FadeIn>
