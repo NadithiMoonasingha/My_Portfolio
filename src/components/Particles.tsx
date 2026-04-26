@@ -20,7 +20,7 @@ export default function ParticlesBackground() {
       id="tsparticles"
       options={{
         fpsLimit: 60,
-        fullScreen: { enable: false },
+        fullScreen: { enable: true, zIndex: 1 },
         background: { color: { value: "transparent" } },
         particles: {
           number: { value: 80, density: { enable: true } },
@@ -49,6 +49,7 @@ export default function ParticlesBackground() {
           },
         },
         interactivity: {
+          detectsOn: "window",
           events: {
             onHover: { enable: true, mode: "repulse" },
           },
@@ -57,15 +58,6 @@ export default function ParticlesBackground() {
           },
         },
         detectRetina: true,
-      }}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: 0,
-        pointerEvents: "none",
       }}
     />
   );
