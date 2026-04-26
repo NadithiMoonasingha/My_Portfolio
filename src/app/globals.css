@@ -10,7 +10,7 @@ body {
 }
 
 html.light body {
-  background-color: #f8f8f8;
+  background-color: #f3f4f6;
   color: #111111;
 }
 
@@ -29,6 +29,6 @@ html.light body {
 
 html.light .gradient-bg {
   background:
-    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(120, 40, 200, 0.07) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(80, 20, 160, 0.05) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(120, 40, 200, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(80, 20, 160, 0.04) 0%, transparent 60%);
 }
