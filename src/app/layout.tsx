@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import ThemeProvider from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Nadithi Moonasingha | Frontend Developer",
@@ -10,13 +9,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className="antialiased">
-        <ThemeProvider>
-          <div className="gradient-bg" />
-          <Navbar />
-          {children}
-        </ThemeProvider>
+        <div className="gradient-bg" />
+        <Navbar />
+        {children}
       </body>
     </html>
   );

@@ -9,21 +9,6 @@ body {
   color: #ededed;
 }
 
-html.light body {
-  background-color: #f3f4f6;
-  color: #0a0a0a;
-}
-
-html.light h1,
-html.light h2,
-html.light h3 {
-  color: #0a0a0a;
-}
-
-html.light p {
-  color: #374151;
-}
-
 .gradient-bg {
   position: fixed;
   top: 0;
@@ -35,10 +20,4 @@ html.light p {
   background:
     radial-gradient(ellipse 80% 50% at 20% 0%, rgba(120, 40, 200, 0.12) 0%, transparent 60%),
     radial-gradient(ellipse 60% 40% at 80% 100%, rgba(80, 20, 160, 0.10) 0%, transparent 60%);
-}
-
-html.light .gradient-bg {
-  background:
-    radial-gradient(ellipse 80% 50% at 20% 0%, rgba(120, 40, 200, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(80, 20, 160, 0.04) 0%, transparent 60%);
 }
