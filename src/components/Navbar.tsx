@@ -68,7 +68,7 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 pt-2">
             {navLinks.map((link) => (
               <li key={link}>
-                
+                <a
                   href={`#${link.toLowerCase()}`}
                   className={`text-sm ${
                     activeSection === link.toLowerCase()
