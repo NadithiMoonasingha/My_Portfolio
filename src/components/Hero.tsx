@@ -22,17 +22,17 @@ export default function Hero() {
         <p className="text-gray-400 max-w-xl text-base leading-relaxed mb-10">
           {portfolioData.about}
         </p>
-        <div className="flex flex-wrap gap-4">
-          <a href="#projects" className="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-full text-sm font-medium transition-colors duration-200">
+        <div className="flex flex-wrap gap-4 items-center">
+          <a href="#projects" className="flex items-center justify-center px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-full text-sm font-medium transition-colors duration-200">
             View My Work
           </a>
-          <a href="#contact" className="px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200">
+          <a href="#contact" className="flex items-center justify-center px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200">
             Get In Touch
           </a>
-          <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200">
+          <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-6 py-3 border border-white/20 hover:border-white/50 text-white rounded-full text-sm font-medium transition-colors duration-200">
             GitHub
           </a>
-          <a href="/CV.pdf" download="Nadithi_Moonasingha_CV.pdf" className="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-full text-sm font-medium transition-colors duration-200">
+          <a href="/CV.pdf" download="Nadithi_Moonasingha_CV.pdf" className="flex items-center justify-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-full text-sm font-medium transition-colors duration-200">
             <Download size={15} />
             Download CV
           </a>
