@@ -1,6 +1,6 @@
 export const portfolioData = {
   name: "Nadithi Moonasingha",
-  title: "Frontend Developer & UI/UX Designer",
+  title: "Frontend Developer",
   email: "moonasinghanadithi@gmail.com",
   phone: "+94 77 111 6403",
   linkedin: "https://www.linkedin.com/in/nadithim",
@@ -8,7 +8,7 @@ export const portfolioData = {
   portfolio: "https://nadithi-portfolio.netlify.app",
 
   about:
-    "Computer Science undergraduate with strong expertise in UI/UX design and frontend development, experienced in building user-centered solutions and continuously exploring new technologies and innovative approaches.",
+    "Computer Science undergraduate with strong expertise in frontend development and UI/UX design, experienced in building user-centered solutions and continuously exploring new technologies and innovative approaches.",
 
   projects: [
     {
