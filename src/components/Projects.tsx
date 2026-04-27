@@ -35,7 +35,7 @@ export default function Projects() {
             {(project.live || project.repo) && (
               <div className="flex gap-3 pt-1">
                 {project.live && (
-                  
+                  <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -45,7 +45,7 @@ export default function Projects() {
                   </a>
                 )}
                 {project.repo && (
-                  
+                  <a
                     href={project.repo}
                     target="_blank"
                     rel="noopener noreferrer"

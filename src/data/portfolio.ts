@@ -12,6 +12,17 @@ export const portfolioData = {
 
   projects: [
     {
+      title: "Smart Campus API",
+      subtitle: "RESTful Backend System",
+      date: "April 2026",
+      description:
+        "Designed and developed a scalable RESTful API using JAX-RS to manage campus rooms, sensors, and real-time data interactions. Implemented resource nesting, advanced error handling, and in-memory data management following REST architectural best practices.",
+      tags: ["Java", "JAX-RS", "REST API"],
+      live: "",
+      repo: "https://github.com/NadithiMoonasingha/SmartCampusAPI.git",
+    },
+
+    {
       title: "Clinexis",
       subtitle: "Healthcare Management System",
       date: "Sep 2025 – Present",
@@ -19,7 +30,7 @@ export const portfolioData = {
         "Designed and developed key UI/UX workflows for a multi-role healthcare platform using React Native and Figma. Implemented voice-to-text consultation features integrated with MongoDB-backed services.",
       tags: ["React Native", "Figma", "MongoDB"],
       live: "",
-      repo: "",
+      repo: "https://github.com/Rahulshanth/SDGP-Clinexis.git",
     },
     {
       title: "Smart To-Do",
@@ -29,7 +40,7 @@ export const portfolioData = {
         "Developed a UX-focused task management application using modular JavaScript architecture with dynamic task tracking and progress visualisation.",
       tags: ["JavaScript", "UI Design"],
       live: "",
-      repo: "",
+      repo: "https://github.com/NadithiMoonasingha/ToDo-UX.git",
     },
     {
       title: "EcoVolt",
@@ -59,7 +70,7 @@ export const portfolioData = {
         "Built a Python-based quiz application with randomized questions, difficulty levels, and performance tracking.",
       tags: ["Python"],
       live: "",
-      repo: "",
+      repo: "https://github.com/NadithiMoonasingha/MathBro.git",
     },
     {
       title: "Bank Account Management System",
@@ -69,7 +80,7 @@ export const portfolioData = {
         "Developed a Java-based menu-driven system to manage customer accounts including transactions and account updates.",
       tags: ["Java"],
       live: "",
-      repo: "",
+      repo: "https://github.com/NadithiMoonasingha/bank_account_management_system.git",
     },
   ],
 
