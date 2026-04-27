@@ -8,7 +8,7 @@ export const portfolioData = {
   portfolio: "https://nadithi-portfolio.netlify.app",
 
   about:
-    "Computer Science undergraduate with strong expertise in frontend development and UI/UX design, experienced in building user-centered solutions and continuously exploring new technologies and innovative approaches.",
+    "Computer Science undergraduate with strong expertise in UI/UX design and frontend development, experienced in building user-centered solutions and continuously exploring new technologies and innovative approaches.",
 
   projects: [
     {
@@ -18,6 +18,8 @@ export const portfolioData = {
       description:
         "Designed and developed key UI/UX workflows for a multi-role healthcare platform using React Native and Figma. Implemented voice-to-text consultation features integrated with MongoDB-backed services.",
       tags: ["React Native", "Figma", "MongoDB"],
+      live: "",
+      repo: "",
     },
     {
       title: "Smart To-Do",
@@ -26,6 +28,8 @@ export const portfolioData = {
       description:
         "Developed a UX-focused task management application using modular JavaScript architecture with dynamic task tracking and progress visualisation.",
       tags: ["JavaScript", "UI Design"],
+      live: "",
+      repo: "",
     },
     {
       title: "EcoVolt",
@@ -34,6 +38,8 @@ export const portfolioData = {
       description:
         "Designed intuitive mobile UI workflows in Figma to enhance user interaction and simplify renewable energy usage tracking.",
       tags: ["Figma", "Mobile UI"],
+      live: "",
+      repo: "",
     },
     {
       title: "Earth In Force",
@@ -42,6 +48,8 @@ export const portfolioData = {
       description:
         "Built a responsive multi-page website using HTML, CSS, and JavaScript with interactive UI components.",
       tags: ["HTML", "CSS", "JavaScript"],
+      live: "",
+      repo: "",
     },
     {
       title: "MathBro",
@@ -50,6 +58,8 @@ export const portfolioData = {
       description:
         "Built a Python-based quiz application with randomized questions, difficulty levels, and performance tracking.",
       tags: ["Python"],
+      live: "",
+      repo: "",
     },
     {
       title: "Bank Account Management System",
@@ -58,6 +68,8 @@ export const portfolioData = {
       description:
         "Developed a Java-based menu-driven system to manage customer accounts including transactions and account updates.",
       tags: ["Java"],
+      live: "",
+      repo: "",
     },
   ],
 
@@ -73,7 +85,7 @@ export const portfolioData = {
     "Organising Committee – IX'25 Designathon, IEEE Student Branch of IIT",
     "Organising Committee – ModelX AI Hackathon, IEEE Computational Intelligence Society",
     "Organising Committee – IndustPro Career Development Workshop, IEEE Computer Society",
-    "Organising Committee – SkillUp Program, LEO Club of IIT",
+    "Organising Committee Member – SkillUp Program, LEO Club of IIT",
     "Participant – Inter-University Startup Competition Codesprint | 2026",
     "Volunteer – Rotaract Club of IIT",
   ],
