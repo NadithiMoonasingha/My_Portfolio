@@ -92,12 +92,35 @@ export const portfolioData = {
   },
 
   leadership: [
-    "Event Coordinator (2024–2025) – Youth Pulse, IIT",
-    "Organising Committee – IX'25 Designathon, IEEE Student Branch of IIT",
-    "Organising Committee – ModelX AI Hackathon, IEEE Computational Intelligence Society",
-    "Organising Committee – IndustPro Career Development Workshop, IEEE Computer Society",
-    "Organising Committee Member – SkillUp Program, LEO Club of IIT",
-    "Participant – Inter-University Startup Competition Codesprint | 2026",
-    "Volunteer – Rotaract Club of IIT",
-  ],
+    {
+      title: "Event Coordinator (2024–2025)",
+      org: "Youth Pulse, IIT",
+      logo: "/Logos/YouthPulse.png"
+    },
+    {
+      title: "Organising Committee – IX’25 Designathon",
+      org: "IEEE Student Branch of IIT",
+      logo: "/Logos/IEEE_SB.jpeg"
+    },
+    {
+      title: "Organising Committee – ModelX AI Hackathon",
+      org: "IEEE CIS",
+      logo: "/Logos/IEEE_CIS.jpg"
+    },
+    {
+      title: "Organising Committee – IndustPro Workshop",
+      org: "IEEE Computer Society",
+      logo: "/Logos/IEEE_CS.jpeg"
+    },
+    {
+      title: "Organising Committee – SkillUp Program",
+      org: "LEO Club of IIT",
+      logo: "/Logos/Leo.png"
+    },
+    {
+      title: "Volunteer",
+      org: "Rotaract Club of IIT",
+      logo: "/Logos/Rotaract.png"
+    }
+  ]
 };

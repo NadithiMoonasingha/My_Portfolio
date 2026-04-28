@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { portfolioData } from "@/data/portfolio";
 
 export default function Leadership() {
@@ -9,9 +10,26 @@ export default function Leadership() {
       <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12">Leadership & Activities</h2>
       <div className="flex flex-col gap-4">
         {portfolioData.leadership.map((item, index) => (
-          <div key={index} className="flex items-start gap-4 bg-white/70 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-5 hover:border-purple-400 dark:hover:border-purple-500/50 transition-all duration-300 shadow-sm">
-            <span className="text-purple-500 mt-0.5 text-lg">◆</span>
-            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{item}</p>
+          <div
+            key={index}
+            className="flex items-center gap-4 bg-white/70 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-5 hover:border-purple-400 dark:hover:border-purple-500/50 transition-all duration-300 shadow-sm"
+          >
+            {/* Logo */}
+            <img
+              src={item.logo}
+              alt={item.org}
+              className="w-10 h-10 object-contain rounded-lg bg-white p-1"
+            />
+
+            {/* Text */}
+            <div>
+              <p className="text-gray-900 dark:text-white text-sm font-medium">
+                {item.title}
+              </p>
+              <p className="text-gray-500 dark:text-gray-400 text-xs">
+                {item.org}
+              </p>
+            </div>
           </div>
         ))}
       </div>
