@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import ParticlesBackground from "@/components/Particles";
+
 
 export const metadata: Metadata = {
   title: "Nadithi Moonasingha | Frontend Developer",
@@ -13,7 +13,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="antialiased">
         <div className="gradient-bg" />
-        <ParticlesBackground />
         <Navbar />
         {children}
       </body>
