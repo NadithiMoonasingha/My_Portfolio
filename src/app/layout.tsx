@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Nadithi Moonasingha | Frontend Developer",
-  description: "Portfolio of Nadithi Moonasingha",
+  description: "Portfolio of Nadithi Moonasingha – Frontend Developer",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
