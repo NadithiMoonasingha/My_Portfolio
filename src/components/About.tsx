@@ -19,13 +19,13 @@ export default function About() {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
           <p style={{ fontSize: "1.05rem", color: "#aaa", lineHeight: 1.9, fontWeight: 300 }}>
-            I am a Computer Science undergraduate at the University of Westminster, studying through the Informatics Institute of Technology in Colombo. My work sits at the intersection of engineering and design — I care as much about how something feels as how it works.
+            I am a Computer Science undergraduate at the University of Westminster, studying through the Informatics Institute of Technology (IIT) in Colombo. My work sits at the intersection of engineering and design, I care as much about how something feels as how it works.
           </p>
           <p style={{ fontSize: "1.05rem", color: "#aaa", lineHeight: 1.9, fontWeight: 300 }}>
-            I have spent the past year building real systems — a healthcare platform for multi-role clinical workflows, energy tracking tools, climate action websites — each one teaching me something new about what it means to design for real people with real constraints.
+            I have spent the past year building real systems, a healthcare platform for multi-role clinical workflows, energy tracking tools, climate action websites, each one teaching me something new about what it means to design for real people with real constraints.
           </p>
           <p style={{ fontSize: "1.05rem", color: "#aaa", lineHeight: 1.9, fontWeight: 300 }}>
-            Outside of code, I organise events, compete in badminton, and look for opportunities to build things that matter. I am currently open to frontend and design-engineer internships for 2026.
+          I actively contribute to student communities by organising large scale tech and career events, collaborating in team driven environments to create meaningful impact. Before university, I competed in badminton at a national level, which helped develop my discipline and focus. I am currently open to frontend and design engineer internships for 2026.
           </p>
         </div>
       </motion.div>
