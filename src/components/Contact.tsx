@@ -8,7 +8,7 @@ export default function Contact() {
         Get in touch
       </p>
       <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact</h2>
-      <p className="text-gray-600 dark:text-gray-400 max-w-md mb-12 text-sm leading-relaxed">
+      <p className="text-gray-600 dark:text-gray-400 max-w-md mb-12 text-base leading-relaxed">
         I am currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -17,7 +17,7 @@ export default function Contact() {
             <Mail size={18} />
           </div>
           <div>
-            <p className="text-gray-400 dark:text-gray-500 text-xs uppercase tracking-widest mb-1">Email</p>
+            <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">Email</p>
             <p className="text-gray-900 dark:text-white text-sm group-hover:text-purple-500 dark:group-hover:text-purple-300 transition-colors">{portfolioData.email}</p>
           </div>
         </a>
@@ -26,7 +26,7 @@ export default function Contact() {
             <Phone size={18} />
           </div>
           <div>
-            <p className="text-gray-400 dark:text-gray-500 text-xs uppercase tracking-widest mb-1">Phone</p>
+            <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">Phone</p>
             <p className="text-gray-900 dark:text-white text-sm group-hover:text-purple-500 dark:group-hover:text-purple-300 transition-colors">{portfolioData.phone}</p>
           </div>
         </a>
@@ -35,7 +35,7 @@ export default function Contact() {
             <ExternalLink size={18} />
           </div>
           <div>
-            <p className="text-gray-400 dark:text-gray-500 text-xs uppercase tracking-widest mb-1">LinkedIn</p>
+            <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">LinkedIn</p>
             <p className="text-gray-900 dark:text-white text-sm group-hover:text-purple-500 dark:group-hover:text-purple-300 transition-colors">linkedin.com/in/nadithim</p>
           </div>
         </a>
@@ -44,7 +44,7 @@ export default function Contact() {
             <GitBranch size={18} />
           </div>
           <div>
-            <p className="text-gray-400 dark:text-gray-500 text-xs uppercase tracking-widest mb-1">GitHub</p>
+            <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">GitHub</p>
             <p className="text-gray-900 dark:text-white text-sm group-hover:text-purple-500 dark:group-hover:text-purple-300 transition-colors">github.com/NadithiMoonasingha</p>
           </div>
         </a>
