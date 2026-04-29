@@ -7,9 +7,6 @@ export const portfolioData = {
   github: "https://github.com/NadithiMoonasingha",
   portfolio: "https://nadithi-portfolio.netlify.app",
 
-  about:
-    "Computer Science undergraduate with strong expertise in frontend development and UI/UX design , experienced in building user-centered solutions and continuously exploring new technologies and innovative approaches.",
-
   projects: [
     {
       title: "Smart Campus API",
