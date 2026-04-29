@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <a href={`mailto:${portfolioData.email}`} className="flex items-center gap-4 bg-white/70 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-6 hover:border-purple-400 dark:hover:border-purple-500/50 transition-all duration-300 group shadow-sm">
           <div className="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-500/20 flex items-center justify-center text-purple-500 dark:text-purple-400">
-            <Mail size={18} />
+            <Mail size={20} />
           </div>
           <div>
             <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">Email</p>
@@ -23,7 +23,7 @@ export default function Contact() {
         </a>
         <a href={`tel:${portfolioData.phone}`} className="flex items-center gap-4 bg-white/70 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-6 hover:border-purple-400 dark:hover:border-purple-500/50 transition-all duration-300 group shadow-sm">
           <div className="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-500/20 flex items-center justify-center text-purple-500 dark:text-purple-400">
-            <Phone size={18} />
+            <Phone size={20} />
           </div>
           <div>
             <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">Phone</p>
@@ -32,7 +32,7 @@ export default function Contact() {
         </a>
         <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/70 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-6 hover:border-purple-400 dark:hover:border-purple-500/50 transition-all duration-300 group shadow-sm">
           <div className="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-500/20 flex items-center justify-center text-purple-500 dark:text-purple-400">
-            <ExternalLink size={18} />
+            <ExternalLink size={20} />
           </div>
           <div>
             <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">LinkedIn</p>
@@ -41,7 +41,7 @@ export default function Contact() {
         </a>
         <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-white/70 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-6 hover:border-purple-400 dark:hover:border-purple-500/50 transition-all duration-300 group shadow-sm">
           <div className="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-500/20 flex items-center justify-center text-purple-500 dark:text-purple-400">
-            <GitBranch size={18} />
+            <GitBranch size={20} />
           </div>
           <div>
             <p className="text-gray-400 dark:text-gray-500 text-sm uppercase tracking-widest mb-1">GitHub</p>
