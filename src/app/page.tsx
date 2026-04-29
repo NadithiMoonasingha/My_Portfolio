@@ -1,22 +1,30 @@
+"use client";
+
+import { useState } from "react";
+import IntroAnimation from "@/components/IntroAnimation";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
+import About from "@/components/About";
+import HorizontalProjects from "@/components/HorizontalProjects";
 import Skills from "@/components/Skills";
 import Leadership from "@/components/Leadership";
 import Contact from "@/components/Contact";
-import FadeIn from "@/components/FadeIn";
 import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
+  const [introComplete, setIntroComplete] = useState(false);
+
   return (
-    <main className="relative z-10 pointer-events-none">
-      <div className="pointer-events-auto">
+    <>
+      {!introComplete && <IntroAnimation onComplete={() => setIntroComplete(true)} />}
+      <main style={{ opacity: introComplete ? 1 : 0, transition: "opacity 0.8s ease" }}>
         <Hero />
-      </div>
-      <FadeIn><div className="pointer-events-auto"><Projects /></div></FadeIn>
-      <FadeIn delay={0.1}><div className="pointer-events-auto"><Skills /></div></FadeIn>
-      <FadeIn delay={0.1}><div className="pointer-events-auto"><Leadership /></div></FadeIn>
-      <FadeIn delay={0.1}><div className="pointer-events-auto"><Contact /></div></FadeIn>
-      <BackToTop />
-    </main>
+        <About />
+        <HorizontalProjects />
+        <Skills />
+        <Leadership />
+        <Contact />
+        <BackToTop />
+      </main>
+    </>
   );
 }
