@@ -31,61 +31,51 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled || menuOpen ? "bg-black/90 backdrop-blur-md border-b border-white/10" : "bg-transparent"}`}>
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#hero" className="text-white font-bold text-xl tracking-tight" onClick={() => setMenuOpen(false)}>
-            NM<span className="text-purple-400">.</span>
+      <nav style={{ position: "fixed", top: 0, width: "100%", zIndex: 50, transition: "all 0.3s", background: scrolled || menuOpen ? "rgba(8,8,8,0.9)" : "transparent", backdropFilter: scrolled || menuOpen ? "blur(12px)" : "none", borderBottom: scrolled ? "0.5px solid rgba(255,255,255,0.06)" : "none" }}>
+        <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "1.25rem 2.5rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <a href="#hero" onClick={() => setMenuOpen(false)} style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.2rem", color: "#f0f0f0", textDecoration: "none" }}>
+            NM<span style={{ color: "#954cb7" }}>.</span>
           </a>
-          <ul className="hidden md:flex gap-8 items-center">
+          <ul style={{ display: "flex", gap: "2.5rem", listStyle: "none", alignItems: "center" }} className="desktop-nav">
             {navLinks.map((link) => (
               <li key={link}>
                 <a
                   href={`#${link.toLowerCase()}`}
-                  className={`text-sm transition-colors duration-200 ${
-                    activeSection === link.toLowerCase()
-                      ? "text-purple-400 font-medium"
-                      : "text-gray-400 hover:text-white"
-                  }`}
+                  style={{ fontSize: "12px", letterSpacing: "0.08em", textDecoration: "none", transition: "color 0.2s", color: activeSection === link.toLowerCase() ? "#954cb7" : "#555" }}
                 >
                   {link}
                 </a>
               </li>
             ))}
           </ul>
-          <button
-            className="md:hidden text-gray-400 hover:text-white p-2"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            <div className="space-y-1.5">
-              <span className={`block w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-              <span className={`block w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-              <span className={`block w-6 h-0.5 bg-current transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <button onClick={() => setMenuOpen(!menuOpen)} style={{ background: "none", border: "none", cursor: "pointer", padding: "8px", display: "none" }} className="mobile-menu-btn" aria-label="Toggle menu">
+            <div style={{ width: "24px", display: "flex", flexDirection: "column", gap: "5px" }}>
+              <span style={{ display: "block", height: "0.5px", background: "#aaa", transition: "all 0.3s", transform: menuOpen ? "rotate(45deg) translate(4px, 4px)" : "none" }} />
+              <span style={{ display: "block", height: "0.5px", background: "#aaa", transition: "all 0.3s", opacity: menuOpen ? 0 : 1 }} />
+              <span style={{ display: "block", height: "0.5px", background: "#aaa", transition: "all 0.3s", transform: menuOpen ? "rotate(-45deg) translate(4px, -4px)" : "none" }} />
             </div>
           </button>
         </div>
       </nav>
 
-      {/* Full screen mobile menu */}
-      <div className={`fixed inset-0 z-40 bg-black/95 backdrop-blur-lg flex flex-col justify-center items-center transition-all duration-300 md:hidden ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
-        <ul className="flex flex-col items-center gap-8">
+      <div style={{ position: "fixed", inset: 0, zIndex: 40, background: "rgba(8,8,8,0.97)", backdropFilter: "blur(16px)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", transition: "all 0.3s", opacity: menuOpen ? 1 : 0, pointerEvents: menuOpen ? "auto" : "none" }} className="mobile-menu">
+        <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", alignItems: "center", gap: "2.5rem" }}>
           {navLinks.map((link) => (
             <li key={link}>
-              <a
-                href={`#${link.toLowerCase()}`}
-                className={`text-2xl font-medium transition-colors duration-200 ${
-                  activeSection === link.toLowerCase()
-                    ? "text-purple-400"
-                    : "text-white hover:text-purple-300"
-                }`}
-                onClick={() => setMenuOpen(false)}
-              >
+              <a href={`#${link.toLowerCase()}`} onClick={() => setMenuOpen(false)} style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem", fontWeight: 500, color: activeSection === link.toLowerCase() ? "#954cb7" : "#f0f0f0", textDecoration: "none" }}>
                 {link}
               </a>
             </li>
           ))}
         </ul>
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .mobile-menu-btn { display: block !important; }
+        }
+      `}</style>
     </>
   );
 }
