@@ -101,7 +101,7 @@ export const portfolioData = {
     },
     {
       title: "Organising Committee – ModelX AI Hackathon",
-      org: "IEEE CIS",
+      org: "IEEE Computational Intelligence Society",
       logo: "/Logos/IEEE_CIS.jpg"
     },
     {
