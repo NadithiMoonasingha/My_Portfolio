@@ -87,14 +87,60 @@ export default function HorizontalProjects() {
             </div>
             <div style={{ display: "flex", gap: "1rem", marginTop: "auto" }}>
               {project.live && (
-                <a href={project.live} target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#555", display: "flex", alignItems: "center", gap: "5px", textDecoration: "none" }}>
-                  <ExternalLink size={12} /> Live
-                </a>
+            <motion.a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ y: -3, scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              style={{
+                padding: "0.5rem 0.9rem",
+                display: "flex",
+                alignItems: "center",
+                gap: "5px",
+                border: "0.5px solid #954cb7",
+                color: "#FFFFFF",
+                borderRadius: "100px",
+                fontSize: "13px",
+                fontWeight: 400,
+                letterSpacing: "0.05em",
+                textDecoration: "none",
+                position: "relative",
+                overflow: "hidden"
+              }}
+              className="glow-btn"
+              >
+                <ExternalLink size={12} /> Live
+              </motion.a>
+
+              
               )}
               {project.repo && (
-                <a href={project.repo} target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#555", display: "flex", alignItems: "center", gap: "5px", textDecoration: "none" }}>
+                <motion.a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -3, scale: 1.03 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  style={{
+                    padding: "0.3rem 0.6rem",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "5px",
+                    border: "0.5px solid #954cb7",
+                    color: "#FFFFFF",
+                    borderRadius: "100px",
+                    fontSize: "13px",
+                    fontWeight: 400,
+                    letterSpacing: "0.05em",
+                    textDecoration: "none",
+                    position: "relative",
+                    overflow: "hidden"
+                  }}
+                  className="glow-btn"
+                >
                   <GitBranch size={12} /> Code
-                </a>
+                </motion.a>
               )}
             </div>
           </motion.div>

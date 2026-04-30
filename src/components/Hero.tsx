@@ -18,15 +18,75 @@ export default function Hero() {
           Designing with intention. Building with care.
         </p>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
-          <a href="#projects" style={{ padding: "0.75rem 2rem", background: "#8c21f1", color: "#fff", borderRadius: "100px", fontSize: "13px", fontWeight: 400, letterSpacing: "0.05em", textDecoration: "none" }}>
+          <motion.a
+            href="#about"
+            whileHover={{ y: -3, scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            style={{
+              padding: "0.75rem 2rem",
+              border: "1px solid #954cb7",
+              color: "#FFFFFF",
+              borderRadius: "100px",
+              fontSize: "13px",
+              fontWeight: 400,
+              letterSpacing: "0.05em",
+              textDecoration: "none",
+              position: "relative",
+              overflow: "hidden",
+
+            }}
+            className="glow-btn"
+          >
             View Work
-          </a>
-          <a href="#about" style={{ padding: "0.75rem 2rem", border: "0.5px solid #333", color: "#aaa", borderRadius: "100px", fontSize: "13px", fontWeight: 400, letterSpacing: "0.05em", textDecoration: "none" }}>
+          </motion.a>
+          
+
+          <motion.a
+            href="#about"
+            whileHover={{ y: -3, scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            style={{
+              padding: "0.75rem 2rem",
+              border: "1px solid #954cb7",
+              color: "#FFFFFF",
+              borderRadius: "100px",
+              fontSize: "13px",
+              fontWeight: 400,
+              letterSpacing: "0.05em",
+              textDecoration: "none",
+              position: "relative",
+              overflow: "hidden",
+            }}
+            className="glow-btn"
+          >
             About Me
-          </a>
-          <a href="/CV.pdf" download="Nadithi_Moonasingha_CV.pdf" style={{ padding: "0.75rem 2rem", border: "0.5px solid #333", color: "#aaa", borderRadius: "100px", fontSize: "13px", fontWeight: 400, letterSpacing: "0.05em", textDecoration: "none", display: "flex", alignItems: "center", gap: "6px" }}>
+          </motion.a>
+
+          <motion.a
+            href="/CV.pdf"
+            download="Nadithi_Moonasingha_CV.pdf"
+            whileHover={{ y: -3, scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            style={{
+              padding: "0.75rem 2rem",
+              border: "1px solid #954cb7",
+              color: "#FFFFFF",
+              borderRadius: "100px",
+              fontSize: "13px",
+              fontWeight: 400,
+              letterSpacing: "0.05em",
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+              position: "relative",
+              overflow: "hidden",
+            }}
+            className="glow-btn"
+          >
             <Download size={13} /> CV
-          </a>
+          </motion.a>
+      
         </div>
       </motion.div>
     </section>
