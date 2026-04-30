@@ -17,16 +17,16 @@ export default function Projects() {
             <div className="flex items-start justify-between">
               <div>
                 <h3 className="text-white font-semibold text-lg">{project.title}</h3>
-                <p className="text-purple-400 text-xs mt-0.5">{project.subtitle}</p>
+                <p className="text-purple-400 text-sm mt-0.5">{project.subtitle}</p>
               </div>
-              <span className="text-gray-500 text-xs whitespace-nowrap ml-2">{project.date}</span>
+              <span className="text-gray-500 text-sm whitespace-nowrap ml-2">{project.date}</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed flex-1">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs rounded-full"
+                  className="px-3 py-1 bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm rounded-full"
                 >
                   {tag}
                 </span>
@@ -39,7 +39,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-white transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     <ExternalLink size={13} /> Live
                   </a>
@@ -49,7 +49,7 @@ export default function Projects() {
                     href={project.repo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-white transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     <GitBranch size={13} /> Code
                   </a>

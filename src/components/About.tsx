@@ -12,7 +12,7 @@ export default function About() {
         className="about-grid"
       >
         <div>
-          <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#954cb7", marginBottom: "1rem" }}>About</p>
+        <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-2">About</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.5rem", fontWeight: 700, color: "#f0f0f0", lineHeight: 1.2 }}>
             Designing with<br /><em>intention.</em>
           </h2>

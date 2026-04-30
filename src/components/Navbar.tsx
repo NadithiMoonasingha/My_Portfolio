@@ -34,14 +34,15 @@ export default function Navbar() {
       <nav style={{ position: "fixed", top: 0, width: "100%", zIndex: 50, transition: "all 0.3s", background: scrolled || menuOpen ? "rgba(8,8,8,0.9)" : "transparent", backdropFilter: scrolled || menuOpen ? "blur(12px)" : "none", borderBottom: scrolled ? "0.5px solid rgba(255,255,255,0.06)" : "none" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "1.25rem 2.5rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <a href="#hero" onClick={() => setMenuOpen(false)} style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.2rem", color: "#f0f0f0", textDecoration: "none" }}>
-            NM<span style={{ color: "#954cb7" }}>.</span>
+            NM<span style={{ color: "#8c21f1" }}>.</span>
           </a>
           <ul style={{ display: "flex", gap: "2.5rem", listStyle: "none", alignItems: "center" }} className="desktop-nav">
             {navLinks.map((link) => (
               <li key={link}>
                 <a
                   href={`#${link.toLowerCase()}`}
-                  style={{ fontSize: "12px", letterSpacing: "0.08em", textDecoration: "none", transition: "color 0.2s", color: activeSection === link.toLowerCase() ? "#954cb7" : "#555" }}
+                  
+                  style={{ fontSize: "13px", letterSpacing: "0.08em", textDecoration: "none", transition: "color 0.2s", color: activeSection === link.toLowerCase() ? "#8c21f1" : "#555" }}
                 >
                   {link}
                 </a>

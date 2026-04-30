@@ -26,7 +26,7 @@ export default function Leadership() {
               <p className="text-gray-900 dark:text-white text-sm font-medium">
                 {item.title}
               </p>
-              <p className="text-gray-500 dark:text-gray-400 text-xs">
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
                 {item.org}
               </p>
             </div>

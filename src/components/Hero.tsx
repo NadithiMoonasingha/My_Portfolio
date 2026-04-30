@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="hero" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 2.5rem", maxWidth: "1100px", margin: "0 auto" }}>
       <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#954cb7", marginBottom: "2rem" }}>
+      <p className="text-purple-500 text-base font-medium tracking-widest uppercase mb-2">
           Frontend Developer
         </p>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(3.5rem, 8vw, 7rem)", fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.02em", color: "#f0f0f0", marginBottom: "2.5rem" }}>
@@ -18,7 +18,7 @@ export default function Hero() {
           Designing with intention. Building with care.
         </p>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", alignItems: "center" }}>
-          <a href="#projects" style={{ padding: "0.75rem 2rem", background: "#954cb7", color: "#fff", borderRadius: "100px", fontSize: "13px", fontWeight: 400, letterSpacing: "0.05em", textDecoration: "none" }}>
+          <a href="#projects" style={{ padding: "0.75rem 2rem", background: "#8c21f1", color: "#fff", borderRadius: "100px", fontSize: "13px", fontWeight: 400, letterSpacing: "0.05em", textDecoration: "none" }}>
             View Work
           </a>
           <a href="#about" style={{ padding: "0.75rem 2rem", border: "0.5px solid #333", color: "#aaa", borderRadius: "100px", fontSize: "13px", fontWeight: 400, letterSpacing: "0.05em", textDecoration: "none" }}>

@@ -11,8 +11,8 @@ export default function HorizontalProjects() {
   const handleMouseDown = (e: React.MouseEvent) => {
     const track = trackRef.current;
     if (!track) return;
-    let startX = e.pageX - track.offsetLeft;
-    let scrollLeft = track.scrollLeft;
+    const startX = e.pageX - track.offsetLeft;
+    const scrollLeft = track.scrollLeft;
     const onMove = (e: MouseEvent) => {
       const x = e.pageX - track.offsetLeft;
       track.scrollLeft = scrollLeft - (x - startX);
@@ -32,7 +32,7 @@ export default function HorizontalProjects() {
         viewport={{ once: true }} transition={{ duration: 0.9 }}
         style={{ padding: "0 2.5rem", maxWidth: "1100px", margin: "0 auto 3rem" }}
       >
-        <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#954cb7", marginBottom: "1rem" }}>Work</p>
+        <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-2">Work</p>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.5rem", fontWeight: 700, color: "#f0f0f0" }}>Selected Projects</h2>
           <p style={{ fontSize: "12px", color: "#444", letterSpacing: "0.05em" }}>← drag to explore →</p>
