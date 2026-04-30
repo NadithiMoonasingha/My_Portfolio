@@ -41,11 +41,50 @@ export default function Navbar() {
               <li key={link}>
                 <a
                   href={`#${link.toLowerCase()}`}
-                  
-                  style={{ fontSize: "13px", letterSpacing: "0.08em", textDecoration: "none", transition: "color 0.2s", color: activeSection === link.toLowerCase() ? "#8c21f1" : "#555" }}
+
+                  onMouseEnter={(e) => {
+                    if (activeSection !== link.toLowerCase()) {
+                      const span = e.currentTarget.querySelector("span") as HTMLElement;
+                      if (span) span.style.width = "100%";
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (activeSection !== link.toLowerCase()) {
+                      const span = e.currentTarget.querySelector("span") as HTMLElement;
+                      if (span) span.style.width = "0%";
+                    }
+                  }}
+
+                  style={{
+                    position: "relative",
+                    fontSize: "13px",
+                    letterSpacing: "0.08em",
+                    textDecoration: "none",
+                    transition: "color 0.3s",
+                    color: activeSection === link.toLowerCase() ? "#8c21f1" : "#aaa"
+                  }}
                 >
                   {link}
+
+                  {/* Underline */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      left: 0,
+                      bottom: "-6px",
+                      height: "2px",
+                      width: activeSection === link.toLowerCase() ? "100%" : "0%",
+                      background: "linear-gradient(90deg, #954cb7, #c084fc)",
+                      transition: "width 0.3s ease",
+                      borderRadius: "2px",
+                      boxShadow: activeSection === link.toLowerCase()
+                        ? "0 0 8px rgba(140,33,241,0.6)"
+                        : "none"
+                    }}
+                  />
+
                 </a>
+                
               </li>
             ))}
           </ul>
