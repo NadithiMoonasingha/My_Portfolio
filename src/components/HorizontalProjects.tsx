@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { portfolioData } from "@/data/portfolio";
 import { motion } from "framer-motion";
 import { ExternalLink, GitBranch } from "lucide-react";
+import Image from "next/image";
 
 export default function HorizontalProjects() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -11,16 +12,20 @@ export default function HorizontalProjects() {
   const handleMouseDown = (e: React.MouseEvent) => {
     const track = trackRef.current;
     if (!track) return;
+
     const startX = e.pageX - track.offsetLeft;
     const scrollLeft = track.scrollLeft;
+
     const onMove = (e: MouseEvent) => {
       const x = e.pageX - track.offsetLeft;
       track.scrollLeft = scrollLeft - (x - startX);
     };
+
     const onUp = () => {
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("mouseup", onUp);
     };
+
     window.addEventListener("mousemove", onMove);
     window.addEventListener("mouseup", onUp);
   };
@@ -28,14 +33,48 @@ export default function HorizontalProjects() {
   return (
     <section id="projects" style={{ padding: "8rem 0" }}>
       <motion.div
-        initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }} transition={{ duration: 0.9 }}
-        style={{ padding: "0 2.5rem", maxWidth: "1100px", margin: "0 auto 3rem" }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        style={{
+          padding: "0 2.5rem",
+          maxWidth: "1200px",
+          margin: "0 auto 3.5rem",
+        }}
       >
-        <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-2">Work</p>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.5rem", fontWeight: 700, color: "#f0f0f0" }}>Selected Projects</h2>
-          <p style={{ fontSize: "12px", color: "#444", letterSpacing: "0.05em" }}>← drag to explore →</p>
+        <p className="text-purple-500 text-sm font-medium tracking-widest uppercase mb-3">
+          Case Studies
+        </p>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
+            gap: "2rem",
+          }}
+        >
+          <h2
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "3.2rem",
+              fontWeight: 700,
+              color: "#f0f0f0",
+            }}
+          >
+            Selected Projects
+          </h2>
+
+          <p
+            style={{
+              fontSize: "13px",
+              color: "#777",
+              letterSpacing: "0.05em",
+            }}
+          >
+            ← drag to explore →
+          </p>
         </div>
       </motion.div>
 
@@ -43,78 +82,165 @@ export default function HorizontalProjects() {
         ref={trackRef}
         onMouseDown={handleMouseDown}
         style={{
-          display: "flex", gap: "1.5rem",
-          overflowX: "auto", overflowY: "hidden",
+          display: "flex",
+          gap: "2rem",
+          overflowX: "auto",
+          overflowY: "hidden",
           padding: "0 2.5rem 2rem",
           cursor: "grab",
           scrollbarWidth: "none",
           WebkitOverflowScrolling: "touch",
         }}
       >
-        {portfolioData.projects.map((project, i) => (
+        {portfolioData.projects.map((project) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: i * 0.08 }}
+            transition={{ duration: 0.01 }}
+            whileHover={{borderColor: "#954cb7"}}
             style={{
               flexShrink: 0,
-              width: "340px",
-              background: "rgba(255,255,255,0.03)",
-              border: "0.5px solid rgba(255,255,255,0.08)",
-              borderRadius: "16px",
-              padding: "2rem",
+              width: "470px",
+              minHeight: "720px",
+              background: "rgba(255,255,255,0.035)",
+              border: "1px solid rgba(255,255,255,0.09)",
+              borderRadius: "22px",
+              padding: "2.4rem",
               display: "flex",
               flexDirection: "column",
-              gap: "1.25rem",
-              transition: "border-color 0.4s",
+              gap: "1.4rem",
+              transition: "border-color 0.4s, transform 0.4s",
             }}
-            whileHover={{ borderColor: "rgba(149,76,183,0.4)" }}
           >
-            <div style={{ aspectRatio: "16/9", background: "rgba(255,255,255,0.04)", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ fontSize: "11px", color: "#333", letterSpacing: "0.1em" }}>MOCKUP / SCREENSHOT</span>
-            </div>
             <div>
-              <p style={{ fontSize: "10px", color: "#954cb7", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "6px" }}>{project.subtitle}</p>
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.4rem", fontWeight: 500, color: "#f0f0f0", marginBottom: "8px" }}>{project.title}</h3>
-              <p style={{ fontSize: "13px", color: "#666", lineHeight: 1.7, fontWeight: 300 }}>{project.description}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  gap: "1rem",
+                  alignItems: "flex-start",
+                  marginBottom: "0.9rem",
+                }}
+              >
+                <div>
+                  <p
+                    style={{
+                      fontSize: "12px",
+                      color: "#a855f7",
+                      letterSpacing: "0.16em",
+                      textTransform: "uppercase",
+                      marginBottom: "0.55rem",
+                      fontWeight: 700,
+                    }}
+                  >
+                    {project.subtitle}
+                  </p>
+
+                  <h3
+                    style={{
+                      fontFamily: "'Playfair Display', serif",
+                      fontSize: "2rem",
+                      lineHeight: 1.15,
+                      fontWeight: 600,
+                      color: "#f4f4f5",
+                      marginBottom: "0.7rem",
+                    }}
+                  >
+                    {project.title}
+                  </h3>
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "12px",
+                    color: "#777",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {project.date}
+                </p>
+              </div>
+
+              <p
+                style={{
+                  fontSize: "14px",
+                  color: "#a855f7",
+                  fontWeight: 600,
+                  marginBottom: "1.1rem",
+                }}
+              >
+                {project.role}
+              </p>
+
+              <p
+                style={{
+                  fontSize: "16px",
+                  color: "#a1a1aa",
+                  lineHeight: 1.8,
+                  fontWeight: 300,
+                }}
+              >
+                {project.description}
+              </p>
             </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-              {project.tags.map(tag => (
-                <span key={tag} style={{ fontSize: "10px", padding: "3px 10px", border: "0.5px solid rgba(149,76,183,0.2)", color: "#954cb7", borderRadius: "100px" }}>{tag}</span>
+
+            <div
+              style={{
+                display: "grid",
+                gap: "1rem",
+              }}
+            >
+              <div>
+                <p style={labelStyle}>Problem</p>
+                <p style={caseTextStyle}>{project.details.problem}</p>
+              </div>
+
+              <div>
+                <p style={labelStyle}>Approach</p>
+                <p style={caseTextStyle}>{project.details.approach}</p>
+              </div>
+
+              <div>
+                <p style={labelStyle}>Impact</p>
+                <p style={caseTextStyle}>{project.details.impact}</p>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              {project.tags.map((tag) => (
+                <span
+                  key={tag}
+                  style={{
+                    fontSize: "12px",
+                    padding: "6px 13px",
+                    border: "1px solid #954cb7)",
+                    color: "#c084fc",
+                    borderRadius: "100px",
+                    background: "rgba(219, 196, 230, 0.08)",
+                  }}
+                >
+                  {tag}
+                </span>
               ))}
             </div>
-            <div style={{ display: "flex", gap: "1rem", marginTop: "auto" }}>
-              {project.live && (
-            <motion.a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ y: -3, scale: 1.03 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              style={{
-                padding: "0.5rem 0.9rem",
-                display: "flex",
-                alignItems: "center",
-                gap: "5px",
-                border: "0.5px solid #954cb7",
-                color: "#FFFFFF",
-                borderRadius: "100px",
-                fontSize: "13px",
-                fontWeight: 400,
-                letterSpacing: "0.05em",
-                textDecoration: "none",
-                position: "relative",
-                overflow: "hidden"
-              }}
-              className="glow-btn"
-              >
-                <ExternalLink size={12} /> Live
-              </motion.a>
 
-              
+            <div style={{ display: "flex", gap: "1rem" }}>
+              {project.live && (
+                <motion.a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -3, scale: 1.03 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  style={buttonStyle}
+                  className="glow-btn"
+                >
+                  <ExternalLink size={15} /> Live
+                </motion.a>
               )}
+
               {project.repo && (
                 <motion.a
                   href={project.repo}
@@ -122,25 +248,51 @@ export default function HorizontalProjects() {
                   rel="noopener noreferrer"
                   whileHover={{ y: -3, scale: 1.03 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  style={{
-                    padding: "0.3rem 0.6rem",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "5px",
-                    border: "0.5px solid #954cb7",
-                    color: "#FFFFFF",
-                    borderRadius: "100px",
-                    fontSize: "13px",
-                    fontWeight: 400,
-                    letterSpacing: "0.05em",
-                    textDecoration: "none",
-                    position: "relative",
-                    overflow: "hidden"
-                  }}
+                  style={buttonStyle}
                   className="glow-btn"
                 >
-                  <GitBranch size={12} /> Code
+                  <GitBranch size={15} /> Code
                 </motion.a>
+              )}
+            </div>
+
+            <div
+              style={{
+                marginTop: "auto",
+                width: "100%",
+                aspectRatio: "16 / 9",
+                borderRadius: "16px",
+                overflow: "hidden",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(255,255,255,0.04)",
+                position: "relative",
+              }}
+            >
+              {project.image ? (
+                <Image
+                src={project.image}
+                alt={`${project.title} preview`}
+                fill
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "top",
+                }}
+              />
+              ) : (
+                <div
+                  style={{
+                    marginTop: "auto",
+                    width: "10%",
+                    aspectRatio: "16 / 9",
+                    borderRadius: "16px",
+                    overflow: "hidden",
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "linear-gradient(135deg, rgba(149,76,183,0.08), rgba(0,0,0,0.4))",
+                    position: "relative",
+                  }}
+                >
+                  Project Preview
+                </div>
               )}
             </div>
           </motion.div>
@@ -149,3 +301,35 @@ export default function HorizontalProjects() {
     </section>
   );
 }
+
+const labelStyle: React.CSSProperties = {
+  fontSize: "12px",
+  color: "#a855f7",
+  letterSpacing: "0.14em",
+  textTransform: "uppercase",
+  fontWeight: 700,
+  marginBottom: "0.35rem",
+};
+
+const caseTextStyle: React.CSSProperties = {
+  fontSize: "14.5px",
+  color: "#8f8f98",
+  lineHeight: 1.65,
+  fontWeight: 300,
+};
+
+const buttonStyle: React.CSSProperties = {
+  padding: "0.6rem 1rem",
+  display: "flex",
+  alignItems: "center",
+  gap: "6px",
+  border: "1px solid #954cb7",
+  color: "#ffffff",
+  borderRadius: "100px",
+  fontSize: "14px",
+  fontWeight: 500,
+  letterSpacing: "0.04em",
+  textDecoration: "none",
+  position: "relative",
+  overflow: "hidden",
+};
