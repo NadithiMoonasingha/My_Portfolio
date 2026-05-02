@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, GitBranch } from "lucide-react";
 import Image from "next/image";
 
-export default function HorizontalProjects() {
+export default function Projects() {
   const trackRef = useRef<HTMLDivElement>(null);
 
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -253,46 +253,6 @@ export default function HorizontalProjects() {
                 >
                   <GitBranch size={15} /> Code
                 </motion.a>
-              )}
-            </div>
-
-            <div
-              style={{
-                marginTop: "auto",
-                width: "100%",
-                aspectRatio: "16 / 9",
-                borderRadius: "16px",
-                overflow: "hidden",
-                border: "1px solid rgba(255,255,255,0.08)",
-                background: "rgba(255,255,255,0.04)",
-                position: "relative",
-              }}
-            >
-              {project.image ? (
-                <Image
-                src={project.image}
-                alt={`${project.title} preview`}
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "top",
-                }}
-              />
-              ) : (
-                <div
-                  style={{
-                    marginTop: "auto",
-                    width: "10%",
-                    aspectRatio: "16 / 9",
-                    borderRadius: "16px",
-                    overflow: "hidden",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    background: "linear-gradient(135deg, rgba(149,76,183,0.08), rgba(0,0,0,0.4))",
-                    position: "relative",
-                  }}
-                >
-                  Project Preview
-                </div>
               )}
             </div>
           </motion.div>

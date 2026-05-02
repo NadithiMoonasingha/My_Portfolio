@@ -4,11 +4,13 @@ import { useState } from "react";
 import IntroAnimation from "@/components/IntroAnimation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import HorizontalProjects from "@/components/HorizontalProjects";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Leadership from "@/components/Leadership";
 import Contact from "@/components/Contact";
+import Gallery from "@/app/gallery/page";
 import BackToTop from "@/components/BackToTop";
+
 
 export default function Home() {
   const [introComplete, setIntroComplete] = useState(false);
@@ -19,10 +21,11 @@ export default function Home() {
       <main style={{ opacity: introComplete ? 1 : 0, transition: "opacity 0.8s ease" }}>
         <Hero />
         <About />
-        <HorizontalProjects />
+        <Projects />
         <Skills />
         <Leadership />
         <Contact />
+        <Gallery />
         <BackToTop />
       </main>
     </>

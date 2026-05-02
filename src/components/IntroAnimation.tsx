@@ -6,8 +6,8 @@ export default function IntroAnimation({ onComplete }: { onComplete: () => void 
   const [phase, setPhase] = useState<"show" | "fadeout">("show");
 
   useEffect(() => {
-    const t1 = setTimeout(() => setPhase("fadeout"), 2000);
-    const t2 = setTimeout(() => onComplete(), 2800);
+    const t1 = setTimeout(() => setPhase("fadeout"), 200);
+    const t2 = setTimeout(() => onComplete(), 200);
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, [onComplete]);
 
