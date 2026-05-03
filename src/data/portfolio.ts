@@ -10,6 +10,7 @@ export const portfolioData = {
   projects: [
     {
       title: "Smart Campus API",
+      slug: "smart-campus",
       subtitle: "RESTful Backend System",
       date: "April 2026",
       role: "Backend Developer",
@@ -35,6 +36,7 @@ export const portfolioData = {
 
     {
       title: "Clinexis",
+      slug: "clinexis",
       subtitle: "Healthcare Management System",
       date: "Sep 2025 – Present",
       role: "UI/UX Designer & Frontend Developer",
@@ -59,6 +61,7 @@ export const portfolioData = {
 
     {
       title: "Smart To-Do",
+      slug: "smart-todo",
       subtitle: "Task Management App",
       date: "Feb 2026 – Present",
       role: "Frontend Developer & UX Designer",
@@ -83,6 +86,7 @@ export const portfolioData = {
 
     {
       title: "EcoVolt",
+      slug: "ecovolt",
       subtitle: "Energy Management App",
       date: "Sep 2025 – Jan 2026",
       role: "UI/UX Designer",
@@ -107,6 +111,7 @@ export const portfolioData = {
 
     {
       title: "Earth In Force",
+      slug: "earth in force",
       subtitle: "Climate Action Website",
       date: "Jun 2025 – Jul 2025",
       role: "Frontend Developer",
@@ -131,6 +136,7 @@ export const portfolioData = {
 
     {
       title: "MathBro",
+      slug: "mathbro",
       subtitle: "Terminal-Based Math Quiz App",
       date: "Nov 2024",
       role: "Software Developer",
@@ -155,6 +161,7 @@ export const portfolioData = {
 
     {
       title: "Bank Account Management System",
+      slug: "bank-system",
       subtitle: "Java Desktop App",
       date: "Jun 2024 – Jul 2024",
       role: "Software Developer",

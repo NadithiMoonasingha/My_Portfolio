@@ -1,31 +1,22 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
-const navLinks = [
-  { name: "About", type: "section" },
-  { name: "Projects", type: "section" },
-  { name: "Skills", type: "section" },
-  { name: "Leadership", type: "section" },
-  { name: "Contact", type: "section" },
-  { name: "Gallery", type: "page" },
-];
+const navLinks = ["About", "Projects", "Skills", "Leadership", "Contact"];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-  const pathname = usePathname(); 
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = navLinks
-        .filter((l) => l.type === "section")
-        .map((l) => document.getElementById(l.name.toLowerCase()));
+      const sections = navLinks.map((l) =>
+        document.getElementById(l.toLowerCase())
+      );
 
       const current = sections.find((s) => {
         if (!s) return false;
@@ -36,11 +27,9 @@ export default function Navbar() {
       if (current) setActiveSection(current.id);
     };
 
-    if (pathname === "/") {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
-  }, [pathname]);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -103,86 +92,41 @@ export default function Navbar() {
             }}
           >
             {navLinks.map((link) => {
-              const isSectionActive =
-                activeSection === link.name.toLowerCase();
-
-              const isGalleryActive =
-                pathname === "/gallery" && link.name === "Gallery";
-
               const isActive =
-                pathname === "/gallery"
-                  ? link.name === "Gallery"
-                  : isSectionActive;
+                activeSection === link.toLowerCase();
 
               return (
-                <li key={link.name}>
-                  {link.type === "section" ? (
-                    <a
-                      href={
-                        pathname === "/"
-                          ? `#${link.name.toLowerCase()}`
-                          : `/#${link.name.toLowerCase()}`
-                      }
-                      style={{
-                        position: "relative",
-                        fontSize: "13px",
-                        letterSpacing: "0.08em",
-                        textDecoration: "none",
-                        color: isActive ? "#954cb7" : "#aaa",
-                      }}
-                    >
-                      {link.name}
+                <li key={link}>
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    style={{
+                      position: "relative",
+                      fontSize: "13px",
+                      letterSpacing: "0.08em",
+                      textDecoration: "none",
+                      color: isActive ? "#954cb7" : "#aaa",
+                    }}
+                  >
+                    {link}
 
-                      {/* UNDERLINE */}
-                      <span
-                        style={{
-                          position: "absolute",
-                          left: 0,
-                          bottom: "-6px",
-                          height: "2px",
-                          width: isActive ? "100%" : "0%",
-                          background:
-                            "linear-gradient(90deg, #954cb7, #c084fc)",
-                          transition: "width 0.3s ease",
-                          borderRadius: "2px",
-                          boxShadow: isActive
-                            ? "0 0 8px rgba(140,33,241,0.6)"
-                            : "none",
-                        }}
-                      />
-                    </a>
-                  ) : (
-                    <Link
-                      href="/gallery"
+                    {/* UNDERLINE */}
+                    <span
                       style={{
-                        position: "relative",
-                        fontSize: "13px",
-                        letterSpacing: "0.08em",
-                        textDecoration: "none",
-                        color: isActive ? "#954cb7" : "#aaa",
+                        position: "absolute",
+                        left: 0,
+                        bottom: "-6px",
+                        height: "2px",
+                        width: isActive ? "100%" : "0%",
+                        background:
+                          "linear-gradient(90deg, #954cb7, #c084fc)",
+                        transition: "width 0.3s ease",
+                        borderRadius: "2px",
+                        boxShadow: isActive
+                          ? "0 0 8px rgba(140,33,241,0.6)"
+                          : "none",
                       }}
-                    >
-                      {link.name}
-
-                      {/* UNDERLINE */}
-                      <span
-                        style={{
-                          position: "absolute",
-                          left: 0,
-                          bottom: "-6px",
-                          height: "2px",
-                          width: isActive ? "100%" : "0%",
-                          background:
-                            "linear-gradient(90deg, #954cb7, #c084fc)",
-                          transition: "width 0.3s ease",
-                          borderRadius: "2px",
-                          boxShadow: isActive
-                            ? "0 0 8px rgba(140,33,241,0.6)"
-                            : "none",
-                        }}
-                      />
-                    </Link>
-                  )}
+                    />
+                  </a>
                 </li>
               );
             })}
@@ -231,32 +175,18 @@ export default function Navbar() {
           }}
         >
           {navLinks.map((link) => (
-            <li key={link.name}>
-              {link.type === "section" ? (
-                <a
-                  href={`/#${link.name.toLowerCase()}`}
-                  onClick={() => setMenuOpen(false)}
-                  style={{
-                    fontSize: "2rem",
-                    color: "#f0f0f0",
-                    textDecoration: "none",
-                  }}
-                >
-                  {link.name}
-                </a>
-              ) : (
-                <Link
-                  href="/gallery"
-                  onClick={() => setMenuOpen(false)}
-                  style={{
-                    fontSize: "2rem",
-                    color: "#f0f0f0",
-                    textDecoration: "none",
-                  }}
-                >
-                  {link.name}
-                </Link>
-              )}
+            <li key={link}>
+              <a
+                href={`#${link.toLowerCase()}`}
+                onClick={() => setMenuOpen(false)}
+                style={{
+                  fontSize: "2rem",
+                  color: "#f0f0f0",
+                  textDecoration: "none",
+                }}
+              >
+                {link}
+              </a>
             </li>
           ))}
         </ul>

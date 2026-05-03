@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { portfolioData } from "@/data/portfolio";
 import { motion } from "framer-motion";
 import { ExternalLink, GitBranch } from "lucide-react";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -226,7 +226,14 @@ export default function Projects() {
               ))}
             </div>
 
-            <div style={{ display: "flex", gap: "1rem" }}>
+            <div
+              style={{
+                display: "flex",
+                gap: "0.8rem",
+                marginTop: "auto",
+                flexWrap: "wrap",
+              }}
+            >
               {project.live && (
                 <motion.a
                   href={project.live}
@@ -254,6 +261,21 @@ export default function Projects() {
                   <GitBranch size={15} /> Code
                 </motion.a>
               )}
+              {/* GALLERY BUTTON */}
+              <Link href={`/gallery/${project.slug}`} style={{ textDecoration: "none" }}>
+                <motion.div
+                  whileHover={{ y: -3, scale: 1.03 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  style={{
+                    ...buttonStyle,
+                    border: "1px solid rgba(149,76,183,0.4)",
+                    color: "#c084fc",
+                  }}
+                  className="glow-btn"
+                >
+                  Gallery
+                </motion.div>
+              </Link>
             </div>
           </motion.div>
         ))}
