@@ -98,7 +98,7 @@ export default function Navbar() {
               return (
                 <li key={link}>
                   <a
-                    href={`#${link.toLowerCase()}`}
+                    href={`/#${link.toLowerCase()}`}
                     style={{
                       position: "relative",
                       fontSize: "13px",
@@ -177,7 +177,7 @@ export default function Navbar() {
           {navLinks.map((link) => (
             <li key={link}>
               <a
-                href={`#${link.toLowerCase()}`}
+                href={`/#${link.toLowerCase()}`}
                 onClick={() => setMenuOpen(false)}
                 style={{
                   fontSize: "2rem",

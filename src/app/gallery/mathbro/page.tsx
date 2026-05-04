@@ -1,13 +1,13 @@
 import ProjectGallery from "@/components/ProjectGallery";
 
-export default function ClinexisGallery() {
+export default function MathbroGallery() {
   return (
     <ProjectGallery
-      title="Clinexis"
+      title="MathBro"
       images={[
-        "/projects/clinexis1.png",
-        "/projects/clinexis2.png",
-        "/projects/clinexis3.png",
+        "/projects/mathbro1.jpeg",
+        "/projects/mathbro2.jpeg",
+        "/projects/mathbro3.jpeg",
       ]}
     />
   );
