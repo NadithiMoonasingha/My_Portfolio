@@ -215,7 +215,7 @@ export default function Projects() {
                   style={{
                     fontSize: "12px",
                     padding: "6px 13px",
-                    border: "1px solid #954cb7)",
+                    border: "1px solid #954cb7",
                     color: "#c084fc",
                     borderRadius: "100px",
                     background: "rgba(219, 196, 230, 0.08)",
