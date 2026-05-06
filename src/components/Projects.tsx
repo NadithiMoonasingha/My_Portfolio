@@ -262,20 +262,25 @@ export default function Projects() {
                 </motion.a>
               )}
               {/* GALLERY BUTTON */}
-              <Link href={`/gallery/${project.slug}`} style={{ textDecoration: "none" }}>
-                <motion.div
-                  whileHover={{ y: -3, scale: 1.03 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  style={{
-                    ...buttonStyle,
-                    border: "1px solid rgba(149,76,183,0.4)",
-                    color: "#c084fc",
-                  }}
-                  className="glow-btn"
+              {project.gallery && (
+                <Link
+                  href={`/gallery/${project.slug}`}
+                  style={{ textDecoration: "none" }}
                 >
-                  Gallery
-                </motion.div>
-              </Link>
+                  <motion.div
+                    whileHover={{ y: -3, scale: 1.03 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    style={{
+                      ...buttonStyle,
+                      border: "1px solid rgba(149,76,183,0.4)",
+                      color: "#c084fc",
+                    }}
+                    className="glow-btn"
+                  >
+                    Gallery
+                  </motion.div>
+                </Link>
+              )}
             </div>
           </motion.div>
         ))}
