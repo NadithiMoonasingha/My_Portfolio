@@ -11,7 +11,7 @@ const blogs = [
     description:
       "A beginner-friendly technical guide explaining how to create, publish, subscribe to, and test an API using WSO2 API Manager.",
     tags: ["WSO2", "API Management", "Technical Writing", "Backend"],
-    link: "PASTE_YOUR_MEDIUM_LINK_HERE",
+    link: "https://medium.com/@moonasinghanadithi/getting-started-with-wso2-api-manager-a-beginner-friendly-guide-96ee63df8ed0",
   },
 ];
 
