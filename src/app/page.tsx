@@ -8,7 +8,9 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Leadership from "@/components/Leadership";
 import Contact from "@/components/Contact";
+import Blogs from "@/components/Blogs";
 import BackToTop from "@/components/BackToTop";
+
 
 
 export default function Home() {
@@ -24,6 +26,7 @@ export default function Home() {
         <Skills />
         <Leadership />
         <Contact />
+        <Blogs />
         <BackToTop />
       </main>
     </>

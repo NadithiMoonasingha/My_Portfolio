@@ -3,7 +3,14 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-const navLinks = ["About", "Projects", "Skills", "Leadership", "Contact"];
+const navLinks = [
+  "About",
+  "Projects",
+  "Writing",
+  "Skills",
+  "Leadership",
+  "Contact",
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
