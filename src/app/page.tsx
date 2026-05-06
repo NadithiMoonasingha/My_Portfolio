@@ -27,7 +27,6 @@ export default function Home() {
         <Skills />
         <Leadership />
         <Contact />
-        <Blogs />
         <BackToTop />
       </main>
     </>
