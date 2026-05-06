@@ -8,6 +8,10 @@ export default function EcoVoltGallery() {
         "/projects/ecovolt1.png",
         "/projects/ecovolt2.png",
         "/projects/ecovolt3.png",
+        "/projects/ecovolt4.png",
+        "/projects/ecovolt5.png",
+
+
       ]}
     />
   );

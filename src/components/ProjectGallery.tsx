@@ -33,7 +33,7 @@ export default function ProjectGallery({ title, images }: ProjectGalleryProps) {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "1.5rem",
+          gap: "2rem",
         }}
       >
         {images.map((src: string, i: number) => (
