@@ -168,25 +168,25 @@ export const portfolioData = {
     {
       title: "Bank Account Management System",
       slug: "bank-system",
-      gallery: false,
-      subtitle: "Java Desktop App",
-      date: "Jun 2024 – Jul 2024",
+      gallery: true,
+      subtitle: "Full-Stack Web App",
+      date: "Jun 2024 – May 2026",
       role: "Software Developer",
       image: "/projects/bank-system.png",
 
       description:
-        "A Java-based desktop system created to manage account operations, customer records, transactions, and account updates.",
+        "Developed a full-stack banking management system with a React dashboard and Python Flask backend to manage customer accounts, deposits, withdrawals, account updates, search, and deletion. Implemented JSON-based data storage and validation rules to improve accuracy and reduce manual record-handling errors.",
 
       details: {
         problem:
-          "Manual banking record handling can be slow, repetitive, and prone to mistakes.",
+          "Manual banking record handling can be slow, repetitive, and prone to errors, especially when managing customer details, balances, and account transactions.",
         approach:
-          "Developed a structured menu-driven Java application with account creation, transaction handling, and data management features.",
+          "Built a React dashboard connected to a Python Flask backend through REST API routes. The system includes customer creation, deposit, withdrawal, update, search, and delete functions, with validation rules and JSON-based data storage.",
         impact:
-          "Improved accuracy and efficiency in managing basic customer banking operations.",
+          "Improved the usability of the original console-based banking system by converting it into a visual dashboard, making account management faster, clearer, and easier to use.",
       },
 
-      tags: ["Java"],
+      tags: ["Java","React", "Python Flask", "JSON", "CSS"],
       live: "",
       repo: "https://github.com/NadithiMoonasingha/bank_account_management_system.git",
     },

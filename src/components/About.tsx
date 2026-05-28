@@ -19,13 +19,14 @@ export default function About() {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
           <p style={{ fontSize: "1.05rem", color: "#aaa", lineHeight: 1.9, fontWeight: 300 }}>
-            I am a Computer Science undergraduate at the University of Westminster, studying through the Informatics Institute of Technology (IIT) in Colombo. My work sits at the intersection of engineering and design, I care as much about how something feels as how it works.
+          I am a Computer Science undergraduate at the University of Westminster, studying through the Informatics Institute of Technology (IIT) in Colombo. I am interested in building practical digital solutions that are reliable, efficient, and useful for real people.
           </p>
           <p style={{ fontSize: "1.05rem", color: "#aaa", lineHeight: 1.9, fontWeight: 300 }}>
-            I have spent the past year building real systems, a healthcare platform for multi-role clinical workflows, energy tracking tools, climate action websites, each one teaching me something new about what it means to design for real people with real constraints.
+            Over the past year, I have worked on different software projects, including healthcare systems, energy tracking tools, climate action websites, and management applications. These projects have helped me improve my problem-solving skills, technical knowledge, and understanding of how software can support real-world needs.
+
           </p>
           <p style={{ fontSize: "1.05rem", color: "#aaa", lineHeight: 1.9, fontWeight: 300 }}>
-          I actively contribute to student communities by organising large scale tech and career events, collaborating in team driven environments to create meaningful impact. Before university, I competed in badminton at a national level, which helped develop my discipline and focus. I am currently open to frontend and design engineer internships for 2026.
+          actively contribute to student communities by organising large-scale tech and career events and collaborating in team-driven environments. Before university, I competed in badminton at a national level, which helped me develop discipline, focus, and resilience. I am currently open to software development and technolog related internship opportunities for 2026.
           </p>
         </div>
       </motion.div>
