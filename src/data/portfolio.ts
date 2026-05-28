@@ -64,25 +64,25 @@ export const portfolioData = {
     {
       title: "Smart To-Do",
       slug: "smart-todo",
-      gallery: false,
-      subtitle: "Task Management App",
+      gallery: true,
+      subtitle: "FULL-STACK TASK MANAGEMENT APP",
       date: "Feb 2026 – Present",
-      role: "Frontend Developer & UX Designer",
+      role: "Full-Stack Developer",
       image: "/projects/smart-todo.png",
 
       description:
-        "A focused task management app designed around clarity, simple interactions, and progress visibility.",
+        "A simple task management web application built with React and Java Spring Boot. The app allows users to add, view, complete, and delete daily tasks through a clean and easy-to-use interface.",
 
       details: {
         problem:
-          "Many task apps feel cluttered and make it difficult for users to quickly understand their progress.",
+          "Many users need a simple way to manage daily tasks without using a cluttered or complicated application.",
         approach:
-          "Created a minimal interface with modular JavaScript logic for task creation, dynamic updates, and visual progress tracking.",
+          "Developed a React frontend with a clean task card interface and connected it to a Java Spring Boot backend using REST API endpoints. The backend handles task creation, viewing, completion updates, and deletion.",
         impact:
-          "Improved usability by helping users manage tasks with fewer distractions and clearer feedback.",
+          "Created a functional full-stack application that demonstrates frontend state management, backend API development, and smooth communication between React and Java.",
       },
 
-      tags: ["JavaScript", "UI Design"],
+      tags: ["React", "Spring Boot", "REST API","CSS", "Java"],
       live: "",
       repo: "https://github.com/NadithiMoonasingha/ToDo-UX.git",
     },
