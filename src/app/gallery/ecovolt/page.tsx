@@ -11,8 +11,12 @@ export default function EcoVoltGallery() {
         "/projects/ecovolt4.png",
         "/projects/ecovolt5.png",
 
-
       ]}
+      frameWidth="100%"
+      frameMaxWidth="290px"
+      frameAspectRatio="9 / 17"
+      imageFit="contain"
+      gridColumns="repeat(auto-fit, minmax(220px, 1fr))"
     />
   );
 }
