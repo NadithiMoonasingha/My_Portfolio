@@ -5,9 +5,10 @@ export default function smartTodoGallery() {
     <ProjectGallery
       title="Smart To Do"
       images={[
-        "/projects/smarttodo1.png",
-        "/projects/smarttodo2.png",
-        "/projects/smarttodo3.png",
+        "/projects/ToDo_1.png",
+        "/projects/ToDo_2.jpg",
+        "/projects/ToDo_3.jpg",
+        "/projects/ToDo_4.jpg",
       ]}
       gridColumns="1fr"
       frameWidth="82%"
