@@ -26,7 +26,7 @@ export default function About() {
 
           </p>
           <p style={{ fontSize: "1.05rem", color: "#aaa", lineHeight: 1.9, fontWeight: 300 }}>
-          actively contribute to student communities by organising large-scale tech and career events and collaborating in team-driven environments. Before university, I competed in badminton at a national level, which helped me develop discipline, focus, and resilience. I am currently open to software development and technolog related internship opportunities for 2026.
+          actively contribute to student communities by organising large-scale tech and career events and collaborating in team-driven environments. Before university, I competed in badminton at a national level, which helped me develop discipline, focus, and resilience. I am currently open to software development and technology related internship opportunities for 2026.
           </p>
         </div>
       </motion.div>
