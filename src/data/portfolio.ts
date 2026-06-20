@@ -115,12 +115,12 @@ export const portfolioData = {
 
     {
       title: "Earth In Force",
-      slug: "earth in force",
-      gallery: false,
+      slug: "earth-in-force",
+      gallery: true,
       subtitle: "Climate Action Website",
       date: "Jun 2025 – Jul 2025",
       role: "Frontend Developer",
-      image: "/projects/earth-in-force.png",
+      image: "/projects/earthinforce_2.jpg",
 
       description:
         "A responsive climate awareness website built to communicate environmental action through clean layouts and interactive UI elements.",
