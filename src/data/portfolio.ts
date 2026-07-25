@@ -88,6 +88,44 @@ export const portfolioData = {
     },
 
     {
+      title: "Internship Application Wizard",
+      slug: "internship-application-wizard",
+      gallery: true,
+      subtitle: "Multi-Step Internship Application Form",
+      date: "Jul 2026",
+      role: "Frontend Developer",
+      image: "/projects/internship-application-wizard.png",
+    
+      description:
+        "A responsive three-step internship application form built with React and TypeScript, featuring validation, local progress saving, and a complete review workflow.",
+    
+      details: {
+        problem:
+          "Long application forms can feel overwhelming, and users may lose their progress or submit incomplete information.",
+    
+        approach:
+          "Built a structured three-step form using React and TypeScript with reusable input components, typed form state, custom validation, skill tags, CV filename preview, responsive navigation, and localStorage persistence.",
+    
+        impact:
+          "Created a clear and user-friendly application experience that guides users through each section, prevents incomplete submissions, and preserves progress after refreshing the browser.",
+      },
+    
+      tags: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Responsive Design",
+        "LocalStorage",
+      ],
+    
+      live:
+        "https://nadithimoonasingha.github.io/internship-application-wizard/",
+    
+      repo:
+        "https://github.com/NadithiMoonasingha/internship-application-wizard.git",
+    },
+
+    {
       title: "EcoVolt",
       slug: "ecovolt",
       gallery: true,

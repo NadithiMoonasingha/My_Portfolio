@@ -1,13 +1,13 @@
 import ProjectGallery from "@/components/ProjectGallery";
 
-export default function ClinexisGallery() {
+export default function SmartCampusGallery() {
   return (
     <ProjectGallery
       title="Smart Campus API"
       images={[
-        "/projects/clinexis1.png",
-        "/projects/clinexis2.png",
-        "/projects/clinexis3.png",
+        "/projects/SmartCampus1.png",
+        "/projects/SmartCampus2.png",
+        "/projects/SmartCampus3.png",
       ]}
     />
   );
