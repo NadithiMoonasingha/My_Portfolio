@@ -1,18 +1,18 @@
 import ProjectGallery from "@/components/ProjectGallery";
 
-export default function internshipApplicationWizardGallery() {
+export default function applyFlowGallery() {
   return (
     <ProjectGallery
-      title="Internship Application Wizard"
+      title="ApplyFlow"
       images={[
-        "/projects/internshipApplicationWizard1.jpg",
-        "/projects/internshipApplicationWizard2.jpg",
-        "/projects/internshipApplicationWizard3.jpg",
-        "/projects/internshipApplicationWizard4.jpg",
-        "/projects/internshipApplicationWizard5.jpg",
-        "/projects/internshipApplicationWizard6.jpg",
-        "/projects/internshipApplicationWizard7.jpg",
-        "/projects/internshipApplicationWizard8.jpg",
+        "/projects/applyFlow1.jpg",
+        "/projects/applyFlow2.jpg",
+        "/projects/applyFlow3.jpg",
+        "/projects/applyFlow4.jpg",
+        "/projects/applyFlow5.jpg",
+        "/projects/applyFlow6.jpg",
+        "/projects/applyFlow7.jpg",
+        "/projects/applyFlow8.jpg",
       ]}
     frameWidth="100%"
     frameMaxWidth="350px"
