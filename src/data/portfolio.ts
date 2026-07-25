@@ -66,7 +66,7 @@ export const portfolioData = {
       slug: "smart-todo",
       gallery: true,
       subtitle: "FULL-STACK TASK MANAGEMENT APP",
-      date: "Feb 2026 – Present",
+      date: "Feb 2026 – Jun 2026",
       role: "Full-Stack Developer",
       image: "/projects/smart-todo.png",
 
@@ -88,13 +88,13 @@ export const portfolioData = {
     },
 
     {
-      title: "Internship Application Wizard",
-      slug: "internship-application-wizard",
+      title: "ApplyFlow",
+      slug: "applyflow",
       gallery: true,
-      subtitle: "Multi-Step Internship Application Form",
+      subtitle: "Internship Application Wizard",
       date: "Jul 2026",
       role: "Frontend Developer",
-      image: "/projects/internship-application-wizard.png",
+      image: "/projects/applyflow.png",
     
       description:
         "A responsive three-step internship application form built with React and TypeScript, featuring validation, local progress saving, and a complete review workflow.",
@@ -104,25 +104,19 @@ export const portfolioData = {
           "Long application forms can feel overwhelming, and users may lose their progress or submit incomplete information.",
     
         approach:
-          "Built a structured three-step form using React and TypeScript with reusable input components, typed form state, custom validation, skill tags, CV filename preview, responsive navigation, and localStorage persistence.",
+          "Built reusable and strongly typed form components with custom validation, localStorage persistence, CV filename preview, responsive navigation, and a final application review screen.",
     
         impact:
-          "Created a clear and user-friendly application experience that guides users through each section, prevents incomplete submissions, and preserves progress after refreshing the browser.",
+          "Improved the clarity of the application process by dividing it into manageable steps while preserving user progress and preventing incomplete submissions.",
       },
     
-      tags: [
-        "React",
-        "TypeScript",
-        "Vite",
-        "Responsive Design",
-        "LocalStorage",
-      ],
+      tags: ["React", "TypeScript", "Vite", "LocalStorage"],
     
       live:
         "https://nadithimoonasingha.github.io/internship-application-wizard/",
     
       repo:
-        "https://github.com/NadithiMoonasingha/internship-application-wizard.git",
+        "https://github.com/NadithiMoonasingha/internship-application-wizard",
     },
 
     {
@@ -182,7 +176,7 @@ export const portfolioData = {
       slug: "mathbro",
       gallery: true,
       subtitle: "Terminal-Based Math Quiz App",
-      date: "Nov 2024",
+      date: "Nov 2024 - May 2026",
       role: "Software Developer",
       image: "/projects/mathbro.png",
 
