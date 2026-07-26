@@ -75,11 +75,11 @@ export const portfolioData = {
 
       details: {
         problem:
-          "Many users need a simple way to manage daily tasks without using a cluttered or complicated application.",
+          "Feature-bloated task apps ruin simple daily usability.",
         approach:
-          "Developed a React frontend with a clean task card interface and connected it to a Java Spring Boot backend using REST API endpoints. The backend handles task creation, viewing, completion updates, and deletion.",
+          "Integrated React frontend with Spring Boot REST APIs for core CRUD actions.",
         impact:
-          "Created a functional full-stack application that demonstrates frontend state management, backend API development, and smooth communication between React and Java.",
+          "Created a fast, distraction-free application with seamless client-server integration.",
       },
 
       tags: ["React", "Spring Boot", "REST API","CSS", "Java"],
@@ -101,13 +101,12 @@ export const portfolioData = {
     
       details: {
         problem:
-          "Long application forms can feel overwhelming, and users may lose their progress or submit incomplete information.",
+          "Multi-field forms lead to submission errors and user drop-off.",
     
         approach:
-          "Built reusable and strongly typed form components with custom validation, localStorage persistence, CV filename preview, responsive navigation, and a final application review screen.",
-    
+          "Built typed, multi-step forms with local storage persistence and validation logic.",
         impact:
-          "Improved the clarity of the application process by dividing it into manageable steps while preserving user progress and preventing incomplete submissions.",
+          "Boosted completion rates and user experience through auto-saving and clear step navigation.",
       },
     
       tags: ["React", "TypeScript", "Vite", "LocalStorage"],
@@ -198,24 +197,24 @@ export const portfolioData = {
     },
 
     {
-      title: "Bank Account Management System",
+      title: "BankPulse",
       slug: "bank-system",
       gallery: true,
-      subtitle: "Full-Stack Web App",
+      subtitle: "Bank Account Management System",
       date: "Jun 2024 – May 2026",
       role: "Software Developer",
       image: "/projects/bank-system.png",
 
       description:
-        "Developed a full-stack banking management system with a React dashboard and Python Flask backend to manage customer accounts, deposits, withdrawals, account updates, search, and deletion. Implemented JSON-based data storage and validation rules to improve accuracy and reduce manual record-handling errors.",
+        "Developed a React and Flask full-stack application with JSON-based storage and input validation to handle customer accounts, deposits, withdrawals, and searches accurately.",
 
       details: {
         problem:
-          "Manual banking record handling can be slow, repetitive, and prone to errors, especially when managing customer details, balances, and account transactions.",
+          "Error-prone manual data entry and slow account management.",
         approach:
-          "Built a React dashboard connected to a Python Flask backend through REST API routes. The system includes customer creation, deposit, withdrawal, update, search, and delete functions, with validation rules and JSON-based data storage.",
+          "Integrated React UI with Flask backend to automate CRUD logic and validation",
         impact:
-          "Improved the usability of the original console-based banking system by converting it into a visual dashboard, making account management faster, clearer, and easier to use.",
+          "Converted a legacy console app into an intuitive, error-reducing dashboard.",
       },
 
       tags: ["Java","React", "Python Flask", "JSON", "CSS"],
