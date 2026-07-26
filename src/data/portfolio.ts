@@ -225,8 +225,8 @@ export const portfolioData = {
 
 
   skills: {
-    Programming: ["Python", "Java", "HTML", "CSS", "JavaScript", "React Native", "React", "TypeScript", "Next.js", "Tailwind CSS"],
-    Tools: ["Figma", "Axure", "Git", "GitHub", "Postman"],
+    Programming: ["Python", "Java", "HTML", "CSS", "JavaScript", "React Native", "React", "TypeScript", "Next.js","React Hooks", "Tailwind CSS"],
+    Tools: ["Figma", "Axure", "Git", "GitHub", "Postman","GitHub Actions","Vite","GitHub Pages"],
     Databases: ["MongoDB", "SQL", "JSON-based Storage"],
     Design: ["Wireframing", "Prototyping", "User Flows", "UI Design","UX Research Basics "],
   },
