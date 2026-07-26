@@ -1,6 +1,6 @@
 import ProjectGallery from "@/components/ProjectGallery";
 
-export default function applyFlowGallery() {
+export default function ApplyFlowGallery() {
   return (
     <ProjectGallery
       title="ApplyFlow"
@@ -14,11 +14,11 @@ export default function applyFlowGallery() {
         "/projects/applyFlow7.jpg",
         "/projects/applyFlow8.jpg",
       ]}
-    frameWidth="100%"
-    frameMaxWidth="350px"
-    frameAspectRatio="9 / 11"
-    imageFit="contain"
-    gridColumns="repeat(auto-fit, minmax(220px, 1fr))"
-  />
-);
+      gridColumns="1fr"
+      frameWidth="82%"
+      frameMaxWidth="900px"
+      frameAspectRatio="16 / 9"
+      imageFit="contain"
+    />
+  );
 }
