@@ -9,30 +9,34 @@ export const portfolioData = {
 
   projects: [
     {
-      title: "Smart Campus API",
-      slug: "smart-campus",
-      gallery: false,
-      subtitle: "RESTful Backend System",
-      date: "April 2026",
-      role: "Backend Developer",
-      image: "/projects/SmartAPI_SplashScreen.jpeg",
-
-
+      title: "ApplyFlow",
+      slug: "applyflow",
+      gallery: true,
+      subtitle: "Internship Application Wizard",
+      date: "Jul 2026",
+      role: "Frontend Developer",
+      image: "/projects/applyflow.png",
+    
       description:
-        "A structured backend system designed to manage campus rooms, sensors, and real-time resource interactions through clean RESTful architecture.",
-
+        "A responsive three-step internship application form built with React and TypeScript, featuring validation, local progress saving, and a complete review workflow.",
+    
       details: {
         problem:
-          "Campus systems needed a clearer way to manage room data, sensor readings, and resource communication.",
+          "Multi-field forms lead to submission errors and user drop-off.",
+    
         approach:
-          "Built resource-based APIs using Java and JAX-RS with organized routing, nested endpoints, validation, and error handling.",
+          "Built typed, multi-step forms with local storage persistence and validation logic.",
         impact:
-          "Created a reliable backend foundation that improved data flow and made campus resources easier to manage.",
+          "Boosted completion rates and user experience through auto-saving and clear step navigation.",
       },
-
-      tags: ["Java", "JAX-RS", "REST API"],
-      live: "",
-      repo: "https://github.com/NadithiMoonasingha/SmartCampusAPI.git",
+    
+      tags: ["React", "TypeScript", "Vite", "LocalStorage"],
+    
+      live:
+        "https://nadithimoonasingha.github.io/internship-application-wizard/",
+    
+      repo:
+        "https://github.com/NadithiMoonasingha/internship-application-wizard",
     },
 
     {
@@ -88,34 +92,56 @@ export const portfolioData = {
     },
 
     {
-      title: "ApplyFlow",
-      slug: "applyflow",
-      gallery: true,
-      subtitle: "Internship Application Wizard",
-      date: "Jul 2026",
-      role: "Frontend Developer",
-      image: "/projects/applyflow.png",
-    
+      title: "Smart Campus API",
+      slug: "smart-campus",
+      gallery: false,
+      subtitle: "RESTful Backend System",
+      date: "April 2026",
+      role: "Backend Developer",
+      image: "/projects/SmartAPI_SplashScreen.jpeg",
+
+
       description:
-        "A responsive three-step internship application form built with React and TypeScript, featuring validation, local progress saving, and a complete review workflow.",
-    
+        "A structured backend system designed to manage campus rooms, sensors, and real-time resource interactions through clean RESTful architecture.",
+
       details: {
         problem:
-          "Multi-field forms lead to submission errors and user drop-off.",
-    
+          "Campus systems needed a clearer way to manage room data, sensor readings, and resource communication.",
         approach:
-          "Built typed, multi-step forms with local storage persistence and validation logic.",
+          "Built resource-based APIs using Java and JAX-RS with organized routing, nested endpoints, validation, and error handling.",
         impact:
-          "Boosted completion rates and user experience through auto-saving and clear step navigation.",
+          "Created a reliable backend foundation that improved data flow and made campus resources easier to manage.",
       },
-    
-      tags: ["React", "TypeScript", "Vite", "LocalStorage"],
-    
-      live:
-        "https://nadithimoonasingha.github.io/internship-application-wizard/",
-    
-      repo:
-        "https://github.com/NadithiMoonasingha/internship-application-wizard",
+
+      tags: ["Java", "JAX-RS", "REST API"],
+      live: "",
+      repo: "https://github.com/NadithiMoonasingha/SmartCampusAPI.git",
+    },
+
+    {
+      title: "BankPulse",
+      slug: "bank-system",
+      gallery: true,
+      subtitle: "Bank Account Management System",
+      date: "Jun 2024 – May 2026",
+      role: "Software Developer",
+      image: "/projects/bank-system.png",
+
+      description:
+        "Developed a React and Flask full-stack application with JSON-based storage and input validation to handle customer accounts, deposits, withdrawals, and searches accurately.",
+
+      details: {
+        problem:
+          "Error-prone manual data entry and slow account management.",
+        approach:
+          "Integrated React UI with Flask backend to automate CRUD logic and validation",
+        impact:
+          "Converted a legacy console app into an intuitive, error-reducing dashboard.",
+      },
+
+      tags: ["Java","React", "Python Flask", "JSON", "CSS"],
+      live: "",
+      repo: "https://github.com/NadithiMoonasingha/bank_account_management_system.git",
     },
 
     {
@@ -168,6 +194,8 @@ export const portfolioData = {
       tags: ["HTML", "CSS", "JavaScript"],
       live: "",
       repo: "",
+
+      
     },
 
     {
@@ -194,32 +222,6 @@ export const portfolioData = {
       tags: ["Python"],
       live: "",
       repo: "https://github.com/NadithiMoonasingha/MathBro.git",
-    },
-
-    {
-      title: "BankPulse",
-      slug: "bank-system",
-      gallery: true,
-      subtitle: "Bank Account Management System",
-      date: "Jun 2024 – May 2026",
-      role: "Software Developer",
-      image: "/projects/bank-system.png",
-
-      description:
-        "Developed a React and Flask full-stack application with JSON-based storage and input validation to handle customer accounts, deposits, withdrawals, and searches accurately.",
-
-      details: {
-        problem:
-          "Error-prone manual data entry and slow account management.",
-        approach:
-          "Integrated React UI with Flask backend to automate CRUD logic and validation",
-        impact:
-          "Converted a legacy console app into an intuitive, error-reducing dashboard.",
-      },
-
-      tags: ["Java","React", "Python Flask", "JSON", "CSS"],
-      live: "",
-      repo: "https://github.com/NadithiMoonasingha/bank_account_management_system.git",
     },
   ],
 
